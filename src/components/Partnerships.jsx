@@ -1,0 +1,160 @@
+import { useState } from "react";
+
+const PartnerLogo = ({ name, subtitle, logoPlaceholder }) => {
+  return (
+    <div className="flex flex-col items-center text-center min-w-[300px] px-8">
+      <div className="w-32 h-20 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+        <div className="text-2xl font-bold text-gray-400">
+          {logoPlaceholder}
+        </div>
+      </div>
+
+      <h3 className="text-xl font-semibold text-gray-900">{name}</h3>
+    </div>
+  );
+};
+
+const Partnerships = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const partnershipSlides = [
+    [
+      {
+        name: "OGQ & GeoEspace",
+        subtitle: "Ordre des géologues du Québec",
+        logoPlaceholder: "OGQ",
+      },
+      {
+        name: "AEMQ & GeoEspace",
+        subtitle: "Association de l'exploration minière du Québec",
+        logoPlaceholder: "AEMQ",
+      },
+      {
+        name: "WallBridge & GeoEspace",
+        subtitle: "WallBridge Mining Company",
+        logoPlaceholder: "WM",
+      },
+    ],
+    [
+      {
+        name: "Mining Corp & GeoEspace",
+        subtitle: "Global Mining Solutions",
+        logoPlaceholder: "MC",
+      },
+      {
+        name: "GeoTech & GeoEspace",
+        subtitle: "Geological Technology Partners",
+        logoPlaceholder: "GT",
+      },
+      {
+        name: "EarthSci & GeoEspace",
+        subtitle: "Earth Sciences Institute",
+        logoPlaceholder: "ES",
+      },
+    ],
+  ];
+
+  const totalSlides = partnershipSlides.length;
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentSlide(slideIndex);
+  };
+
+  return (
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <span className="text-emerald-600">Collaborations</span> With
+            Leading Brands
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            We collaborate with a number of top-tier companies on imagining the
+            future of work. Have a look.
+          </p>
+        </div>
+
+        <div className="relative">
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            >
+              {partnershipSlides.map((slide, slideIndex) => (
+                <div key={slideIndex} className="w-full flex-shrink-0">
+                  <div className="flex justify-center items-center space-x-8 lg:space-x-16">
+                    {slide.map((partner, partnerIndex) => (
+                      <PartnerLogo key={partnerIndex} {...partner} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors"
+          >
+            <svg
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white border border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors"
+          >
+            <svg
+              className="w-5 h-5 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div className="flex justify-center space-x-2 mt-12">
+          {partnershipSlides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`w-3 h-3 rounded-full transition-colors ${
+                currentSlide === index
+                  ? "bg-emerald-600"
+                  : "bg-gray-300 hover:bg-gray-400"
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Partnerships;

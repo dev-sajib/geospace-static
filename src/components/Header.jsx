@@ -20,12 +20,12 @@ const Header = () => {
           </div>
 
           <nav className="hidden lg:flex space-x-8">
-            <a
-              href="#"
+            <Link
+              to="/top-5"
               className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
             >
               Top 5%
-            </a>
+            </Link>
             <div className="relative group">
               <a
                 href="#"
@@ -128,12 +128,13 @@ const Header = () => {
           }`}
         >
           <div className="px-2 pt-2 pb-6 space-y-1 bg-white border-t border-gray-100">
-            <a
-              href="#"
+            <Link
+              to="/top-5"
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Top 5%
-            </a>
+            </Link>
             <a
               href="#"
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"

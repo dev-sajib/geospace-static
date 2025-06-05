@@ -157,18 +157,10 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-emerald-600 py-16 sm:py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8">
-            About GeoEspace
-          </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-white/90 max-w-4xl mx-auto leading-relaxed">
-            At GeoEspace, we connect top-tier professionals with industry
-            leaders to drive innovation, sustainability, and success in
-            exploration, mining, and environmental sciences.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        title="About GeoEspace"
+        description="At GeoEspace, we connect top-tier professionals with industry leaders to drive innovation, sustainability, and success in exploration, mining, and environmental sciences."
+      />
 
       <section className="bg-gray-50 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

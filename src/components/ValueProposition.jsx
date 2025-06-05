@@ -12,23 +12,23 @@ import {
 
 const ProfessionalCard = ({ icon, title, description }) => {
   return (
-    <div className="p-8 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-100 hover:bg-emerald-600 hover:text-white">
-      <div className="mb-6">
-        <div className="w-16 h-16 rounded-full flex items-center justify-center bg-emerald-100 group-hover:bg-white group-hover:bg-opacity-20">
+    <div className="p-6 md:p-8 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-100 hover:bg-emerald-600 hover:text-white min-h-[280px] flex flex-col">
+      <div className="mb-4 md:mb-6">
+        <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center bg-emerald-100 group-hover:bg-white group-hover:bg-opacity-20">
           {icon}
         </div>
       </div>
 
-      <h3 className="text-xl font-semibold mb-4 text-gray-900 group-hover:text-white">
+      <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-gray-900 group-hover:text-white line-clamp-2">
         {title}
       </h3>
 
-      <p className="text-sm leading-relaxed text-gray-600 group-hover:text-emerald-100">
+      <p className="text-sm leading-relaxed text-gray-600 group-hover:text-emerald-100 flex-1 mb-4">
         {description}
       </p>
 
-      <div className="mt-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <button className="flex items-center text-white font-medium hover:underline">
+      <div className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <button className="flex items-center text-white font-medium hover:underline text-sm">
           View {title}s
           <svg className="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
             <path
@@ -50,7 +50,7 @@ const ValueProposition = () => {
       description:
         "Experienced geologists with in-depth knowledge of earth sciences, mineral exploration, and geological mapping.",
       icon: (
-        <FaHardHat className="w-8 h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <FaHardHat className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
       ),
     },
     {
@@ -58,7 +58,7 @@ const ValueProposition = () => {
       description:
         "Skilled miners proficient in underground and surface mining techniques, safety protocols, and resource extraction.",
       icon: (
-        <FaHardHat className="w-8 h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <FaHardHat className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
       ),
     },
     {
@@ -66,7 +66,7 @@ const ValueProposition = () => {
       description:
         "Expert engineers across various disciplines, specializing in designing, developing, and optimizing industrial projects.",
       icon: (
-        <FaUserTie className="w-8 h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <FaUserTie className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
       ),
     },
     {
@@ -74,7 +74,7 @@ const ValueProposition = () => {
       description:
         "A professional focused on analyzing, assessing, and resolving issues related to the environment. They work across various fields to protect ecosystems, promote sustainability, and ensure compliance with environmental regulations.",
       icon: (
-        <FaLeaf className="w-8 h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <FaLeaf className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
       ),
     },
     {
@@ -82,7 +82,7 @@ const ValueProposition = () => {
       description:
         "Data-driven analysts adept at interpreting complex data sets, providing actionable insights.",
       icon: (
-        <FaChartBar className="w-8 h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <FaChartBar className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
       ),
     },
     {
@@ -90,7 +90,7 @@ const ValueProposition = () => {
       description:
         "Detail-oriented inspectors ensuring compliance with safety standards, quality control, and regulatory requirements.",
       icon: (
-        <FaBolt className="w-8 h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <FaBolt className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
       ),
     },
     {
@@ -98,7 +98,7 @@ const ValueProposition = () => {
       description:
         "Strategic managers with leadership experience in overseeing operations and ensuring project success across sectors.",
       icon: (
-        <FaTools className="w-8 h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <FaTools className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
       ),
     },
     {
@@ -106,7 +106,7 @@ const ValueProposition = () => {
       description:
         "A technician in mining and geology plays a critical role in the exploration, extraction, and analysis of mineral resources. Their work supports geologists, mining engineers, and other professionals in gathering data.",
       icon: (
-        <FaCog className="w-8 h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <FaCog className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
       ),
     },
     {
@@ -114,28 +114,28 @@ const ValueProposition = () => {
       description:
         "Experienced operators proficient in controlling and monitoring machinery, equipment, and systems to ensure optimal performance and safety.",
       icon: (
-        <FaOilCan className="w-8 h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <FaOilCan className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
       ),
     },
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
             Leverage World-Class
           </h2>
-          <h2 className="text-4xl font-bold text-emerald-600 mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-emerald-600 mb-4 sm:mb-6">
             Geological and Mining Talent
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
             We are the largest, globally-distributed network of expert geologist
             and miner, ready to tackle your most critical project.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {professionals.map((professional, index) => (
             <ProfessionalCard key={index} {...professional} />
           ))}

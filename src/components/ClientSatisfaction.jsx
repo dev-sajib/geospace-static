@@ -32,7 +32,11 @@ const TestimonialCard = ({ quote, author, position, company, rating }) => {
   );
 };
 
-const ClientSatisfaction = () => {
+const ClientSatisfaction = ({
+  title = "Our Clients' Satisfaction is Our Top Priority",
+  subtitle = "We have a reputation for helping clients around the world find success on their most important projects",
+  bgColor = "bg-white",
+}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const testimonials = [
@@ -73,17 +77,23 @@ const ClientSatisfaction = () => {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className={`py-20 ${bgColor}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Our Clients' <span className="text-emerald-600">Satisfaction</span>{" "}
-            is Our Top Priority
+            {title.includes("Satisfaction") ? (
+              <>
+                Our Clients'{" "}
+                <span className="text-emerald-600">Satisfaction</span> is Our
+                Top Priority
+              </>
+            ) : (
+              <>
+                Hear From <span className="text-emerald-600">Our Clients</span>
+              </>
+            )}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We have a reputation for helping clients around the world find
-            success on their most important projects
-          </p>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">{subtitle}</p>
         </div>
 
         <div className="relative">

@@ -6,6 +6,7 @@ import PressReleasePage from "./pages/PressReleasePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import CNESSTPermitPage from "./pages/CNESSTPermitPage";
 import WhyChooseGeoEspacePage from "./pages/WhyChooseGeoEspacePage";
+import Top5Page from "./pages/Top5Page";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             path="/why-choose-geoeospace"
             element={<WhyChooseGeoEspacePage />}
           />
+          <Route path="/top-5" element={<Top5Page />} />
         </Routes>
       </Layout>
     </Router>

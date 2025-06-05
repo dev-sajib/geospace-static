@@ -5,6 +5,7 @@ import ClientsPage from "./pages/ClientsPage";
 import PressReleasePage from "./pages/PressReleasePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import CNESSTPermitPage from "./pages/CNESSTPermitPage";
+import WhyChooseGeoEspacePage from "./pages/WhyChooseGeoEspacePage";
 import Top5Page from "./pages/Top5Page";
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
           <Route path="/press-releases" element={<PressReleasePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/cnesst-permit" element={<CNESSTPermitPage />} />
+          <Route
+            path="/why-choose-geoeospace"
+            element={<WhyChooseGeoEspacePage />}
+          />
           <Route path="/top-5" element={<Top5Page />} />
         </Routes>
       </Layout>

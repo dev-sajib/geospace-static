@@ -223,12 +223,12 @@ const Footer = () => {
         <div className="border-t border-emerald-700 mt-8 sm:mt-12 pt-6 sm:pt-8 mb-6 sm:mb-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6">
-              <a
-                href="#"
+              <Link
+                to="/why-choose-geoeospace"
                 className="text-emerald-200 hover:text-white text-xs sm:text-sm transition-colors"
               >
                 Why GeoEspace
-              </a>
+              </Link>
               <Link
                 to="/press-releases"
                 className="text-emerald-200 hover:text-white text-xs sm:text-sm transition-colors"

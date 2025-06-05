@@ -268,12 +268,12 @@ const Footer = () => {
 
         <div className="border-t border-emerald-700 pt-6">
           <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6">
-            <a
-              href="#"
+            <Link
+              to="/privacy-policy"
               className="text-emerald-200 hover:text-white text-sm transition-colors"
             >
               Privacy Policy
-            </a>
+            </Link>
             <a
               href="#"
               className="text-emerald-200 hover:text-white text-sm transition-colors"

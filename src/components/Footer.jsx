@@ -241,12 +241,12 @@ const Footer = () => {
               >
                 Careers
               </a>
-              <a
-                href="#"
+              <Link
+                to="/about"
                 className="text-emerald-200 hover:text-white text-xs sm:text-sm transition-colors"
               >
                 About Us
-              </a>
+              </Link>
             </div>
 
             <div className="flex space-x-3 sm:space-x-4">

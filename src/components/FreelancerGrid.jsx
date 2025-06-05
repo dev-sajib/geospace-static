@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const FreelancerCard = ({
@@ -10,28 +10,32 @@ const FreelancerCard = ({
   imagePlaceholder,
 }) => {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm min-w-[280px] mx-3">
-      <div className="w-full h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
+    <div className="bg-white rounded-xl border border-gray-200 p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+      <div className="w-full h-40 sm:h-48 bg-gray-100 rounded-lg mb-4 overflow-hidden">
         <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
           <span className="text-gray-500 text-sm">{imagePlaceholder}</span>
         </div>
       </div>
 
-      <h3 className="text-lg font-semibold text-gray-900 mb-2">{name}</h3>
+      <h3 className="text-lg font-semibold text-gray-900 mb-2 line-clamp-2">
+        {name}
+      </h3>
 
       <div className="flex items-center mb-3">
-        <div className="w-3 h-3 bg-emerald-500 rounded-full mr-2"></div>
-        <span className="text-sm text-emerald-600 font-medium">
+        <div className="w-3 h-3 bg-emerald-500 rounded-full mr-2 flex-shrink-0"></div>
+        <span className="text-xs sm:text-sm text-emerald-600 font-medium line-clamp-2">
           {verifiedExpert}
         </span>
       </div>
 
-      <p className="text-gray-600 mb-4">{role}</p>
+      <p className="text-gray-600 mb-4 text-sm sm:text-base line-clamp-2">
+        {role}
+      </p>
 
-      <div className="text-sm text-gray-500">
-        <p className="mb-1">PREVIOUSLY AT</p>
-        <p className="font-medium text-gray-700">
-          <strong>{previousCompany}</strong> {companyName}
+      <div className="text-xs sm:text-sm text-gray-500">
+        <p className="mb-1 font-medium">PREVIOUSLY AT</p>
+        <p className="font-medium text-gray-700 line-clamp-2">
+          <strong>{companyName}</strong>
         </p>
       </div>
     </div>
@@ -40,51 +44,74 @@ const FreelancerCard = ({
 
 const FreelancerGrid = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [cardsToShow, setCardsToShow] = useState(4);
+  const [gapSize, setGapSize] = useState(24);
 
   const freelancers = [
     {
       name: "Ric Saltzman",
-      verifiedExpert: "Verified Expert in Mining",
+      verifiedExpert: "Expert in Mining",
       role: "Coal Miner",
       previousCompany: "Teck",
       companyName: "Teck Resources Limited",
       imagePlaceholder: "Freelancer Image",
     },
     {
-      name: "Ric Saltzman",
-      verifiedExpert: "Verified Expert in Mining",
-      role: "Coal Miner",
-      previousCompany: "Teck",
-      companyName: "Teck Resources Limited",
-      imagePlaceholder: "Freelancer Image",
-    },
-    {
-      name: "Henery Marcel",
-      verifiedExpert: "Verified Expert in Mining",
-      role: "Coal Miner",
-      previousCompany: "Teck",
-      companyName: "Teck Resources Limited",
+      name: "Maria Rodriguez",
+      verifiedExpert: "Expert in Geology",
+      role: "Senior Geologist",
+      previousCompany: "Barrick",
+      companyName: "Barrick Gold Corporation",
       imagePlaceholder: "Freelancer Image",
     },
     {
       name: "Henery Marcel",
-      verifiedExpert: "Verified Expert in Mining",
-      role: "Coal Miner",
-      previousCompany: "Teck",
-      companyName: "Teck Resources Limited",
+      verifiedExpert: "Expert in Mining",
+      role: "Mining Engineer",
+      previousCompany: "Vale",
+      companyName: "Vale S.A.",
       imagePlaceholder: "Freelancer Image",
     },
     {
       name: "Sarah Johnson",
-      verifiedExpert: "Verified Expert in Mining",
-      role: "Coal Miner",
-      previousCompany: "Teck",
-      companyName: "Teck Resources Limited",
+      verifiedExpert: "Expert in Environmental",
+      role: "Environmental Specialist",
+      previousCompany: "Newmont",
+      companyName: "Newmont Corporation",
+      imagePlaceholder: "Freelancer Image",
+    },
+    {
+      name: "David Chen",
+      verifiedExpert: "Expert in Drilling",
+      role: "Professional Driller",
+      previousCompany: "Rio Tinto",
+      companyName: "Rio Tinto Group",
       imagePlaceholder: "Freelancer Image",
     },
   ];
 
-  const cardsToShow = 4;
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      if (window.innerWidth < 640) {
+        setCardsToShow(1);
+        setGapSize(16);
+      } else if (window.innerWidth < 768) {
+        setCardsToShow(2);
+        setGapSize(20);
+      } else if (window.innerWidth < 1024) {
+        setCardsToShow(3);
+        setGapSize(24);
+      } else {
+        setCardsToShow(4);
+        setGapSize(24);
+      }
+    };
+
+    updateCardsToShow();
+    window.addEventListener("resize", updateCardsToShow);
+    return () => window.removeEventListener("resize", updateCardsToShow);
+  }, []);
+
   const maxSlide = Math.max(0, freelancers.length - cardsToShow);
 
   const nextSlide = () => {
@@ -95,53 +122,139 @@ const FreelancerGrid = () => {
     setCurrentSlide((prev) => Math.max(prev - 1, 0));
   };
 
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe && currentSlide < maxSlide) {
+      nextSlide();
+    }
+    if (isRightSwipe && currentSlide > 0) {
+      prevSlide();
+    }
+  };
+
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Top Freelancers in Geoscience
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            Connect with verified experts in mining, geology, and environmental
+            sciences
+          </p>
+        </div>
+
         <div className="relative">
           <button
             onClick={prevSlide}
             disabled={currentSlide === 0}
-            className={`absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white border border-gray-200 rounded-full flex items-center justify-center transition-colors shadow-sm ${
+            className={`hidden sm:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 bg-white border border-gray-200 rounded-full items-center justify-center transition-all duration-200 shadow-sm ${
               currentSlide === 0
                 ? "opacity-50 cursor-not-allowed"
-                : "hover:bg-gray-50 cursor-pointer"
+                : "hover:bg-gray-50 hover:shadow-md cursor-pointer"
             }`}
           >
-            <FaChevronLeft className="w-5 h-5 text-emerald-600" />
+            <FaChevronLeft className="w-4 h-4 lg:w-5 lg:h-5 text-emerald-600" />
           </button>
 
           <button
             onClick={nextSlide}
             disabled={currentSlide === maxSlide}
-            className={`absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white border border-gray-200 rounded-full flex items-center justify-center transition-colors shadow-sm ${
+            className={`hidden sm:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 bg-white border border-gray-200 rounded-full items-center justify-center transition-all duration-200 shadow-sm ${
               currentSlide === maxSlide
                 ? "opacity-50 cursor-not-allowed"
-                : "hover:bg-gray-50 cursor-pointer"
+                : "hover:bg-gray-50 hover:shadow-md cursor-pointer"
             }`}
           >
-            <FaChevronRight className="w-5 h-5 text-emerald-600" />
+            <FaChevronRight className="w-4 h-4 lg:w-5 lg:h-5 text-emerald-600" />
           </button>
 
-          <div className="overflow-hidden mx-16">
+          <div className="overflow-hidden mx-0 sm:mx-12 lg:mx-16">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{
                 transform: `translateX(-${
                   currentSlide * (100 / cardsToShow)
                 }%)`,
+                gap: `${gapSize}px`,
               }}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
             >
               {freelancers.map((freelancer, index) => (
                 <div
                   key={index}
                   className="flex-shrink-0"
-                  style={{ width: `${100 / cardsToShow}%` }}
+                  style={{
+                    width:
+                      cardsToShow === 1
+                        ? "100%"
+                        : `calc((100% - ${
+                            (cardsToShow - 1) * gapSize
+                          }px) / ${cardsToShow})`,
+                  }}
                 >
                   <FreelancerCard {...freelancer} />
                 </div>
               ))}
             </div>
+          </div>
+
+          <div className="flex justify-center mt-6 space-x-2 sm:hidden">
+            {Array.from({ length: maxSlide + 1 }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                  currentSlide === index
+                    ? "bg-emerald-600"
+                    : "bg-gray-300 hover:bg-gray-400"
+                }`}
+              />
+            ))}
+          </div>
+
+          <div className="flex justify-center space-x-4 mt-6 sm:hidden">
+            <button
+              onClick={prevSlide}
+              disabled={currentSlide === 0}
+              className={`flex items-center justify-center w-10 h-10 bg-white border border-gray-200 rounded-full transition-all duration-200 shadow-sm ${
+                currentSlide === 0
+                  ? "opacity-50 cursor-not-allowed"
+                  : "hover:bg-gray-50 cursor-pointer"
+              }`}
+            >
+              <FaChevronLeft className="w-4 h-4 text-emerald-600" />
+            </button>
+            <button
+              onClick={nextSlide}
+              disabled={currentSlide === maxSlide}
+              className={`flex items-center justify-center w-10 h-10 bg-white border border-gray-200 rounded-full transition-all duration-200 shadow-sm ${
+                currentSlide === maxSlide
+                  ? "opacity-50 cursor-not-allowed"
+                  : "hover:bg-gray-50 cursor-pointer"
+              }`}
+            >
+              <FaChevronRight className="w-4 h-4 text-emerald-600" />
+            </button>
           </div>
         </div>
       </div>

@@ -11,8 +11,8 @@ const ClientVideoCard = ({ title, imageSrc, companyName, className = "" }) => {
         />
 
         {companyName && (
-          <div className="absolute top-4 left-4">
-            <h3 className="text-white text-lg font-bold drop-shadow-lg">
+          <div className="absolute top-2 sm:top-4 left-2 sm:left-4">
+            <h3 className="text-white text-sm sm:text-lg font-bold drop-shadow-lg">
               {companyName}
             </h3>
           </div>
@@ -21,9 +21,9 @@ const ClientVideoCard = ({ title, imageSrc, companyName, className = "" }) => {
         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
 
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-white/90 rounded-full p-3 group-hover:bg-white transition-colors shadow-lg">
+          <div className="bg-white/90 rounded-full p-2 sm:p-3 group-hover:bg-white transition-colors shadow-lg">
             <svg
-              className="w-6 h-6 text-emerald-600 ml-0.5"
+              className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600 ml-0.5"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -36,10 +36,10 @@ const ClientVideoCard = ({ title, imageSrc, companyName, className = "" }) => {
           </div>
         </div>
 
-        <div className="absolute bottom-4 left-4">
-          <div className="bg-emerald-600 text-white px-3 py-2 rounded-full text-sm font-medium flex items-center shadow-lg">
+        <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4">
+          <div className="bg-emerald-600 text-white px-2 sm:px-3 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium flex items-center shadow-lg">
             <svg
-              className="w-4 h-4 mr-2"
+              className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -49,7 +49,8 @@ const ClientVideoCard = ({ title, imageSrc, companyName, className = "" }) => {
                 clipRule="evenodd"
               />
             </svg>
-            Watch this Video
+            <span className="hidden sm:inline">Watch this Video</span>
+            <span className="sm:hidden">Watch</span>
           </div>
         </div>
       </div>

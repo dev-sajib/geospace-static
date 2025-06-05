@@ -1,25 +1,25 @@
 const PrivacyPolicyContent = () => {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-      <div className="prose prose-lg max-w-none text-gray-700">
-        <div className="mb-8">
-          <span className="inline-block bg-emerald-100 text-emerald-800 text-sm font-medium px-4 py-2 rounded-full">
+    <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8">
+      <div className="prose prose-sm sm:prose lg:prose-lg max-w-none text-gray-700">
+        <div className="mb-6 sm:mb-8">
+          <span className="inline-block bg-emerald-100 text-emerald-800 text-xs sm:text-sm font-medium px-3 sm:px-4 py-1 sm:py-2 rounded-full">
             Date of Last Revision: June 05, 2025
           </span>
         </div>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             1. Introduction
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Thank you for using Geoeospace's websites and services that link to
             this Privacy Policy, including geoespacec.ca (the "Sites").
             Geoespace Corporation, ("Geoespacec," "we," "us," and/or "our")
             operates these Sites to provide our users ("you" and "your") with
             tools and information about Geoespacec and our services.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec sources and matches the world's top freelancers
             ("Freelancers") in a variety of fields with clients who need the
             Freelancer's skills and expertise ("Clients"). Geoespacec also
@@ -29,7 +29,7 @@ const PrivacyPolicyContent = () => {
             outcomes-based deliverables, are referred to as the "Services" for
             this policy.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec screens Freelancers with skills in areas such as
             Geologist, environment, Oil, Engineers, Technicians, Mining,
             Drillers, and project management to curate a proprietary network of
@@ -39,7 +39,7 @@ const PrivacyPolicyContent = () => {
             Geocientists), this is the space built for all geocientists
             freelancers which is the origin of the name Geoespacec.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec values your privacy rights, and we take our
             responsibilities and obligations about your privacy rights
             seriously. We want you to know that Geoespacec is not in the
@@ -50,9 +50,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Scope</h2>
-          <p className="mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
+            2. Scope
+          </h2>
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             This Privacy Policy explains how we collect, retain, and use
             information, including personal data ("Personal Data"), about
             Freelancers, Talents, Clients, potential Clients, Site visitors,
@@ -61,62 +63,76 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             3. Collection and Use of Personal Data
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             The information we receive and how we use it varies based on our
             relationship with you. The sections below explain our data practices
             based on our different user relationships. Use these links to
             navigate to the section relevant to you quickly:
           </p>
 
-          <ul className="list-none mb-6 space-y-2">
+          <ul className="list-none mb-4 sm:mb-6 space-y-1 sm:space-y-2">
             <li className="flex items-center">
-              <span className="text-emerald-600 mr-2">▶</span>
-              <span className="text-emerald-600 font-medium">Freelancers</span>
+              <span className="text-emerald-600 mr-2 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-emerald-600 font-medium text-xs sm:text-sm">
+                Freelancers
+              </span>
             </li>
             <li className="flex items-center">
-              <span className="text-emerald-600 mr-2">▶</span>
-              <span className="text-emerald-600 font-medium">
+              <span className="text-emerald-600 mr-2 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-emerald-600 font-medium text-xs sm:text-sm">
                 Clients and Prospective Clients
               </span>
             </li>
             <li className="flex items-center">
-              <span className="text-emerald-600 mr-2">▶</span>
-              <span className="text-emerald-600 font-medium">
+              <span className="text-emerald-600 mr-2 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-emerald-600 font-medium text-xs sm:text-sm">
                 Job Applicants
               </span>
             </li>
             <li className="flex items-center">
-              <span className="text-emerald-600 mr-2">▶</span>
-              <span className="text-emerald-600 font-medium">
+              <span className="text-emerald-600 mr-2 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-emerald-600 font-medium text-xs sm:text-sm">
                 Site Visitors
               </span>
             </li>
             <li className="flex items-center">
-              <span className="text-emerald-600 mr-2">▶</span>
-              <span className="text-emerald-600 font-medium">
+              <span className="text-emerald-600 mr-2 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-emerald-600 font-medium text-xs sm:text-sm">
                 Software Users; and
               </span>
             </li>
             <li className="flex items-center">
-              <span className="text-emerald-600 mr-2">▶</span>
-              <span className="text-emerald-600 font-medium">
+              <span className="text-emerald-600 mr-2 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-emerald-600 font-medium text-xs sm:text-sm">
                 Event Attendees
               </span>
             </li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">
             a. Freelancers, Including Experts
           </h3>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             i. Information We Collect
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             This Privacy Policy explains how we collect, retain, and use
             information, including personal data ("Personal Data"), about
             Freelancers, Talents, Clients, potential Clients, Site visitors,
@@ -124,8 +140,10 @@ const PrivacyPolicyContent = () => {
             data protection laws and regulations as described below.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">1. Scope</h4>
-          <p className="mb-4">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
+            1. Scope
+          </h4>
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We collect information from applicants and during our screening
             process, we need to evaluate your qualifications such as your
             language skills, personality, domain-specific knowledge, competence,
@@ -135,50 +153,74 @@ const PrivacyPolicyContent = () => {
             could include your:
           </p>
 
-          <ul className="list-none mb-6 space-y-2">
+          <ul className="list-none mb-4 sm:mb-6 space-y-1 sm:space-y-2">
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Name;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Name;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Contact information;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Contact information;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Address;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Address;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Location;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Location;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Work experience;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Work experience;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Education;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Education;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>References;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">References;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Photo;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Photo;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Government-issued identification.</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                Government-issued identification.
+              </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Social network information; and Billing Information.</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                Social network information; and Billing Information.
+              </span>
             </li>
           </ul>
 
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             During the screening process or your time as a freelancer, we may
             also record your audio and video calls with us or clients to help
             document your skills or to use them for our quality assurance or
@@ -188,10 +230,10 @@ const PrivacyPolicyContent = () => {
             email addresses.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             2. Biometric Data and Retention
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may request that you provide information to verify and confirm
             your identity. As part of this identity verification, we may ask you
             to take a photo of yourself and of your government-issued
@@ -220,7 +262,7 @@ const PrivacyPolicyContent = () => {
             to help prevent and investigate fraud and other violations of our
             systems.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             As part of our screening process, we may require additional
             information to verify your identity in this remote environment. A
             member of our team may request additional details, such as your
@@ -229,7 +271,7 @@ const PrivacyPolicyContent = () => {
             verification service provider depending on your location and
             processed based on its related privacy policy.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Amazon Rekognition does not sell or retain your Biometric Data and
             permanently deletes it within twenty-four hours after sending us the
             information on whether your identity and government-issued
@@ -241,10 +283,10 @@ const PrivacyPolicyContent = () => {
             refer to Amazon Rekognition Privacy Policy for more information.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             3. Sharing Your Biometric Data
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Amazon rekognition may share your Biometric Data and Verification
             Data with Verify to provide the verification services. For more
             information on how Amazon Rekognition handles your Verification Data
@@ -252,10 +294,10 @@ const PrivacyPolicyContent = () => {
             Privacy Policy.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             4. Background Checks
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Based on your potential role as a freelancer, we may request a
             background check that will collect additional data about you through
             a third-party service provider. If applicable to you, your express
@@ -264,10 +306,10 @@ const PrivacyPolicyContent = () => {
             applicable laws.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             5. Profile Creation
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             If we select you to be a freelancer, we may use some of your
             Personal Data to enable you to create a profile for us to display
             within the Services, which may be viewed by Clients seeking
@@ -276,24 +318,24 @@ const PrivacyPolicyContent = () => {
             showcase your skill sets or to demonstrate the value of the Network.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             6. Client Feedback
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We collect reviews and ratings from the Company to improve or boost
             the profile of each freelancer.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec's have four (4) steps of category; Junior, Intermediate,
             Senior, and Expert; each category has a rate he charges. If you
             become a freelancer with Geoespacec, the Clients you engage with may
             provide us with information about your performance.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             7. Information Obtained from Third Parties
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may collect information, such as your name, contact information,
             address, work experience, and education from publicly available
             sources, third-party data providers, or services. This includes
@@ -304,59 +346,59 @@ const PrivacyPolicyContent = () => {
             our affiliates.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             8. Automatically Collected Data
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             When you interact with Geoespacec through the Site or services, we
             may automatically collect certain information. Please read the "Site
             Visitors" section below for more information.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             ii. How We Use the Information
           </h4>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             1. To Provide the Service and Respond to Requests
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We use your Personal Data to process your request to become a Talent
             and administer our contracts with you and your engagements if you
             become a member of the Network.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             2. For Certain Legitimate Interests
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We also may use your Data for certain business interests deemed
             legitimate under applicable law, including:
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To send you administrative information, for example, information
             regarding the Site and changes to our terms, conditions, and
             policies.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To conduct analytics on how you use the Site and our Service for our
             internal purposes and to better understand your needs and interests
             to personalize your experience with our Service.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To maintain our Services, including our standards of integrity and
             excellence in our Network.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To market our Services and showcase freelancers to actual and
             potential Clients.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To help prevent fraud, criminal activity, and misuse of our products
             or Services and to ensure the security of our IT systems,
             architecture, and networks.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             For legal reasons, including to comply with legal obligations and
             legal processes, such as our compliance with sanctions about
             specific regions or specifically designated individuals, responding
@@ -366,22 +408,22 @@ const PrivacyPolicyContent = () => {
             us to pursue available remedies or limit the damages that we may
             sustain.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             If you ask us to delete your data and we are required to fulfill
             your request, we will keep basic data to identify you to prevent
             fraud or further unwanted processing.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             3. With Your Consent
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may also ask for your consent to use your Data for a purpose that
             is not listed in this Privacy Policy, and we will use your Data for
             that purpose to the extent that you freely provide your informed
             consent.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may monitor, record, and transcribe audio or video calls with you
             during the application process or your time as a freelancer.
             Consenting is voluntary, and you may withdraw your consent at any
@@ -391,7 +433,7 @@ const PrivacyPolicyContent = () => {
             purposes. Additionally, we may provide your interviews with Clients
             for specific engagements to Client stakeholders to review the call.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may collect your voice, image, in-meeting messages, and any other
             Personal Data you choose to share during such calls. In addition,
             other participants in a video conference may be able to view your
@@ -403,19 +445,19 @@ const PrivacyPolicyContent = () => {
         </section>
 
         {/* Continue with more sections... */}
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">
             b. Information Use Case
           </h3>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             i. How We Use the Information that provide to us
           </h4>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             1. Information That You Provide to Us
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We collect Personal Data from Clients and Prospective Clients
             (collectively "Clients") when a client visits our Sites and begins
             to use our Services as well as through requests from a Client to
@@ -423,34 +465,48 @@ const PrivacyPolicyContent = () => {
             of data:
           </p>
 
-          <ul className="list-none mb-6 space-y-2">
+          <ul className="list-none mb-4 sm:mb-6 space-y-1 sm:space-y-2">
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Name;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Name;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Contact information;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Contact information;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Job titles;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Job titles;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Payment information;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Payment information;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Address;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Address;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Location; and</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Location; and</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
                 Company information, including the type of freelancer(s) the
                 Client is looking to engage and other information related to the
                 Client's needs.
@@ -458,17 +514,17 @@ const PrivacyPolicyContent = () => {
             </li>
           </ul>
 
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec provides freelancers and our internal team members the
             use of a geoespacec.ca email address. Geoespacec stores and
             processes information sent to and from all geoespacec.ca email
             addresses.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             2. Information Obtained from Third Parties
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may collect additional information about you and your company
             from publicly available or third-party databases or services that
             provide information about business contacts and companies (including
@@ -476,23 +532,23 @@ const PrivacyPolicyContent = () => {
             company information).
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             3. Automatically Collected Data
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             When you interact with Geoespacec through the Site or Services, we
             automatically collect certain information. Please read the "Site
             Visitors" section below for more information.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             ii. How We Use the Information
           </h4>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             1. To Provide the Services and Respond to Requests
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec uses the Personal Data you provide consistent with this
             Privacy Policy. If you provide Personal Data for a certain reason,
             if we use the Personal Data, we will do so in connection with the
@@ -505,10 +561,10 @@ const PrivacyPolicyContent = () => {
             such Services.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             2. For Marketing Purposes
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may use your contact details to tell you about Services, upcoming
             events, and other promotions that we believe you will be interested
             in. If we do so, each marketing communication we send you will
@@ -522,30 +578,30 @@ const PrivacyPolicyContent = () => {
             contact us at privacy@geoespacec.ca or our mailing address in the
             Contacting Geoespacec section below.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Where required by applicable law, we will only send you marketing
             information by email if you consent to our use of your Personal Data
             for such communications.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             3. For Certain Legitimate Interests
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may use your Data for certain business interests deemed
             legitimate under applicable law, including:
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To send you administrative information, for example, information
             regarding the Site and changes to our terms, conditions, and
             policies.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To respond to your inquiries and fulfill your requests, such as to
             send you requested materials, newsletters and information and
             materials regarding our products and Services.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To conduct analytics on how you use the Site and our Services for
             our internal purposes, for example, for maintaining, benchmarking,
             and improving our offerings, identifying usage trends and
@@ -553,18 +609,18 @@ const PrivacyPolicyContent = () => {
             inform our marketing strategy and personalize our communications
             with you.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To supplement the information that we collected from you with
             information obtained from third parties (described above) to update,
             expand, and analyze our records, identify new Clients, and provide
             products and services that may be of interest to you.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             To prevent fraud, criminal activity, and misuse of our products or
             services and to ensure the security of our IT systems, architecture,
             and networks.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             For legal reasons, including to comply with legal obligations and
             legal processes, respond to requests from public and government
             authorities including public and government authorities outside your
@@ -573,22 +629,22 @@ const PrivacyPolicyContent = () => {
             that of you or others, and allow us to pursue available remedies or
             limit the damages that we may sustain.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             If you ask us to delete your data, we are required to fulfill your
             request, to keep basic data to identify you and to prevent future
             fraud or further unwanted processing.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             4. With Your Consent
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may also ask for your consent to use your Data for a purpose that
             is not listed in this Privacy Policy, and we will use your Data for
             that purpose to the extent that you freely provide your informed
             consent.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may monitor, record, and transcribe audio or video calls with you
             during your time as a client. Consenting is voluntary, and you may
             withdraw it at any time. These actions allow multiple Geoespacec
@@ -600,71 +656,89 @@ const PrivacyPolicyContent = () => {
             the call.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             5. Credit Checks
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may request a credit check through a third-party service before
             providing a Client with our Service, which will collect additional
             data about the Client.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">
             c. Job Applicants
           </h3>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             i. Information We Collect
           </h4>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             1. Application and Assessment Process
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             When you apply for a position with Geoespacec, you will provide
             Personal Data in your application, resume, cover letter, or in other
             formats. While you may decide what information to include, for
             instance, most applications include your:
           </p>
 
-          <ul className="list-none mb-6 space-y-2">
+          <ul className="list-none mb-4 sm:mb-6 space-y-1 sm:space-y-2">
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Name;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Name;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Contact information;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Contact information;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Qualifications;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Qualifications;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Recommendation information;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                Recommendation information;
+              </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Employment history;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Employment history;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Education;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Education;</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Salary history; and</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Salary history; and</span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Salary expectations.</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">Salary expectations.</span>
             </li>
           </ul>
 
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             If we invite you to undertake further assessments in connection with
             your application and you participate in such assessments, we will
             collect the additional Personal Data that you provide to us as part
@@ -677,17 +751,17 @@ const PrivacyPolicyContent = () => {
             withdraw your consent or do not consent, it will not impact your
             candidacy.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Throughout the recruitment process, we may create Personal Data in
             connection with the assessment of your application, such as through
             your interviewer's evaluation of your suitability for the role(s)
             that you applied for.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             2. If Your Application is Successful
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             If your application is successful, we may collect further Personal
             Data about you in connection with conducting reference and
             background checks where required and permitted by applicable law,
@@ -698,76 +772,110 @@ const PrivacyPolicyContent = () => {
             copy of your work permit, a photograph, and a copy of your signature
             through your executed acceptance.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Please see the "Region Specific Information" section below for
             information on your rights about the Personal Data we hold about
             you.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             3. Automatically Collected Data
           </h4>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             When you interact with Geoespacec through our Site about your
             application, we automatically collect certain information. Please
             read the "Site Visitors" section below for more information.
           </p>
 
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">
+          <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
             ii. How We Use Your Information
           </h4>
 
-          <ul className="list-none mb-6 space-y-2">
+          <ul className="list-none mb-4 sm:mb-6 space-y-1 sm:space-y-2">
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>We have a legitimate interest in:</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                We have a legitimate interest in:
+              </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Facilitating the interview process with you;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                Facilitating the interview process with you;
+              </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Offering you roles to work for us;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                Offering you roles to work for us;
+              </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Making informed recruitment decisions;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                Making informed recruitment decisions;
+              </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Selecting suitable candidates for roles with us;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                Selecting suitable candidates for roles with us;
+              </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Improving our recruiting and hiring processes;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                Improving our recruiting and hiring processes;
+              </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
                 Informing you of current and future career opportunities;
               </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>Complying with immigration requirements;</span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
+                Complying with immigration requirements;
+              </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
                 Verifying your identity for our internal security purposes; and
               </span>
             </li>
             <li className="flex items-start">
-              <span className="text-emerald-600 mr-2 mt-1">▶</span>
-              <span>
+              <span className="text-emerald-600 mr-2 mt-1 text-xs sm:text-sm">
+                ▶
+              </span>
+              <span className="text-xs sm:text-sm">
                 Complying with our legal obligations and for the performance of
                 your contract with us.
               </span>
             </li>
           </ul>
 
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             If you are engaged to work for Geoespacec, your Personal Data will
             be used as part of your team member record under our team member
             privacy policies and may be shared with third-party service
@@ -776,11 +884,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">
             d. Site Visitors
           </h3>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             When you interact with Geoespacec through the Site or the Services,
             we and service providers acting on our behalf will automatically
             collect information about you through cookies and other
@@ -789,7 +897,7 @@ const PrivacyPolicyContent = () => {
             we use cookies and other technologies on the specific Site you are
             using.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             As a Site Visitor, our servers record information, including
             information that your browser automatically sends whenever you visit
             the Site. This data includes your Internet Protocol ("IP") address
@@ -797,7 +905,7 @@ const PrivacyPolicyContent = () => {
             you visit the Site, browser type and settings and the date and time
             of your request.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We use this automatically collected data for our legitimate
             interests in maintaining the safe operation of our Site, maintaining
             our legal obligations and our legitimate interest in learning how
@@ -806,11 +914,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">
             e. Software Users
           </h3>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             When you use Geoespacec software, we collect account-level data,
             including your name, email, and password, to facilitate your access,
             storage of historical data, and operation of the software. If you
@@ -823,7 +931,7 @@ const PrivacyPolicyContent = () => {
             to respond to your requests and ensure we provide our Services in
             the best way that we can.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             When you use Geoespacec software, we may collect usage statistics
             for analytics and to support and troubleshoot the software to
             provide a better user experience. We have a legitimate interest in
@@ -832,18 +940,18 @@ const PrivacyPolicyContent = () => {
             providers to assist in the authentication of users and cloud hosting
             for the storage and retrieval of screenshots.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec's software includes online components and cookies that
             are required for full functionality. For more information about the
             Sites cookie usage please see each software's cookie policy.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">
             f. Event Attendees
           </h3>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We may collect Personal Data from you when you attend one of our
             events, for instance at business conferences and trade shows. The
             data we collect includes information that you voluntarily give to us
@@ -853,7 +961,7 @@ const PrivacyPolicyContent = () => {
             you including marketing our Services to you consistent with the
             purpose for which you gave the information.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Where required by applicable law, we will ask for your consent
             before or when sending you marketing information by email. When you
             provide us with your consent to be contacted for marketing purposes,
@@ -865,11 +973,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             4. Disclosing Your Personal Data
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec is not in the business of selling your information. We
             consider information about you and our interactions to be a vital
             part of our relationship with you. There are, however, certain
@@ -877,20 +985,20 @@ const PrivacyPolicyContent = () => {
             parties, as explained below:
           </p>
 
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">
             1. Business Transfers
           </h3>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             As we develop our business, we might acquire businesses or assets.
             In the event of a corporate sale, merger, reorganization,
             dissolution or similar event, Personal Data may be part of the
             transferred assets.
           </p>
 
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">
             2. Agents, Consultants and Other Service Providers
           </h3>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec, like many businesses, hires third parties to perform
             certain business-related functions. These third parties include
             website analytics companies, providers of digital advertising
@@ -904,7 +1012,7 @@ const PrivacyPolicyContent = () => {
             process, or store Personal Data while performing their duties to us
             and solely to perform the services we hired them to provide.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             If you enter financial information into one of the Sites to process
             a payment, Stripe, our payment processor, Transfers Deposit, and
             PayPal will receive the information you enter and process the
@@ -912,10 +1020,10 @@ const PrivacyPolicyContent = () => {
             Policies
           </p>
 
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4">
             3. Legal Requirements
           </h3>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec may disclose your Data if required to do so by law, for
             example, as part of our compliance with sanctions about specific
             regions and specifically designated individuals, or in the good
@@ -927,11 +1035,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             5. Data Retention
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Our policy is to keep your Data only for as long as is reasonably
             necessary to fulfill the purposes for which it was collected and
             processed, including to satisfy any legal, regulatory, accounting or
@@ -949,24 +1057,24 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             6. Region Specific Information
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             You may be able to exercise certain rights and access certain
             information depending on your location. Please review the following
             sections for more details. You can reach out to
             privacy@geoespacec.ca with questions about your information.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Right to object. You may ask us at any time to stop processing your
             Personal Data, and we will do so unless we have a compelling
             legitimate ground for the processing. We will comply with requests
             to stop processing your Personal Data as your requests apply to
             direct marketing.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Rights about automated decision-making and profiling. You have the
             right to be free from decisions based solely on automated processing
             of your Personal Data, including profiling, which produces a
@@ -980,40 +1088,40 @@ const PrivacyPolicyContent = () => {
             You may contact us at privacy@geoespacec.ca to obtain an explanation
             of the decision or for a personal review, if possible.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Right to withdraw consent. If we rely on your consent to process
             your Personal Data, you have the right to withdraw that consent at
             any time, but this will not affect any data that we already
             processed.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Right to complain to the data protection authority. If you have a
             concern about our privacy practices, including the way we handled
             your Personal Data, you can report it to the data protection
             authority that is authorized to hear those concerns.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             You may exercise your rights by contacting us as indicated under the
             "Contacting Geoespacec" section below.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             7. Your Choices
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             You can use the Sites without providing any Personal Data. If you
             choose not to provide any Personal Data, you may not be able to use
             certain Services.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             8. Exclusions
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             This Privacy Policy does not apply to any Personal Data collected by
             Geoespacec other than Personal Data collected through the Sites,
             Services, events, third parties or as otherwise stated in this
@@ -1032,14 +1140,16 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Children</h2>
-          <p className="mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
+            9. Children
+          </h2>
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec does not knowingly collect Personal Data from children
             under the age of 16. If you are under the age of 16, please do not
             submit any Personal Data through the Sites.
           </p>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             We encourage parents and legal guardians to monitor their children's
             Internet usage and to help enforce our Privacy Policy by instructing
             their children never to provide Personal Data on these Sites without
@@ -1050,11 +1160,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             10. Links to Other Websites
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             The Sites may contain links to other websites not operated or
             controlled by Geoespacec ("Third Party Sites"). The information that
             you share with Third Party Sites will be governed by the specific
@@ -1066,11 +1176,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             11. Security
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Geoespacec takes reasonable and appropriate steps to protect the
             Personal Data provided via the Sites or the services from loss,
             misuse, and unauthorized access, disclosure, alteration, or
@@ -1081,11 +1191,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             12. Other Terms and Conditions
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Your access to and use of geoespacec is subject to our Website Terms
             & Conditions. Your access to and use of other Sites may be subject
             to different terms and conditions. Please review those Sites for
@@ -1093,11 +1203,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             13. Changes to Geoespacec's Privacy Policy
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             The Sites and our business may change from time to time. As a
             result, at times it may be necessary for Geoespacec to make changes
             to this Privacy Policy. Geoespacec reserves the right to update or
@@ -1111,11 +1221,11 @@ const PrivacyPolicyContent = () => {
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        <section className="mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             14. Contacting Geoespacec
           </h2>
-          <p className="mb-4">
+          <p className="mb-3 sm:mb-4 text-sm sm:text-base">
             Please contact us if you have any questions about Geoespacec's
             Privacy Policy, the information practices of the Sites, or if you
             have questions about your rights. We have a team responsible for
@@ -1124,16 +1234,16 @@ const PrivacyPolicyContent = () => {
             privacy@geoespacec.ca, or by mail at:
           </p>
 
-          <div className="bg-gray-50 p-6 rounded-lg mb-6">
-            <h3 className="text-lg font-semibold text-gray-800 mb-3">
+          <div className="bg-gray-50 p-3 sm:p-4 lg:p-6 rounded-lg mb-4 sm:mb-6">
+            <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2 sm:mb-3">
               GeoEspace Corporation
             </h3>
-            <div className="space-y-2 text-gray-700">
-              <p className="text-red-600 font-medium">
+            <div className="space-y-1 sm:space-y-2 text-gray-700">
+              <p className="text-red-600 font-medium text-xs sm:text-sm">
                 Attention: Privacy Policy Query
               </p>
-              <p>VeroSafe Canada Ltd</p>
-              <p>
+              <p className="text-xs sm:text-sm">VeroSafe Canada Ltd</p>
+              <p className="text-xs sm:text-sm">
                 Geoespacec Connects the Top 5% of Freelance All Over Canada and
                 USA.
               </p>

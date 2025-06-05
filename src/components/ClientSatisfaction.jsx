@@ -3,29 +3,35 @@ import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 
 const TestimonialCard = ({ quote, author, position, company, rating }) => {
   return (
-    <div className="bg-emerald-50 rounded-xl p-8 min-w-[500px] mx-4">
-      <div className="text-6xl text-emerald-400 font-serif mb-4">"</div>
+    <div className="bg-emerald-50 rounded-xl p-4 sm:p-6 lg:p-8 min-w-[280px] sm:min-w-[320px] lg:min-w-[500px] mx-2 sm:mx-4">
+      <div className="text-4xl sm:text-5xl lg:text-6xl text-emerald-400 font-serif mb-3 sm:mb-4">
+        "
+      </div>
 
-      <blockquote className="text-gray-700 text-base leading-relaxed mb-6">
+      <blockquote className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6 line-clamp-4 lg:line-clamp-none">
         {quote}
       </blockquote>
 
-      <div className="flex items-center mb-4">
+      <div className="flex items-center mb-3 sm:mb-4">
         {[...Array(5)].map((_, i) => (
           <FaStar
             key={i}
-            className={`w-4 h-4 ${
+            className={`w-3 h-3 sm:w-4 sm:h-4 ${
               i < rating ? "text-yellow-400" : "text-gray-300"
             }`}
           />
         ))}
       </div>
 
-      <div className="border-t border-gray-200 pt-4">
-        <p className="font-semibold text-gray-900 text-sm">{author}</p>
-        <p className="text-gray-600 text-sm">{position}</p>
-        <div className="mt-2">
-          <p className="text-2xl font-bold text-gray-900">{company}</p>
+      <div className="border-t border-gray-200 pt-3 sm:pt-4">
+        <p className="font-semibold text-gray-900 text-xs sm:text-sm">
+          {author}
+        </p>
+        <p className="text-gray-600 text-xs sm:text-sm">{position}</p>
+        <div className="mt-1 sm:mt-2">
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">
+            {company}
+          </p>
         </div>
       </div>
     </div>
@@ -76,11 +82,37 @@ const ClientSatisfaction = ({
     );
   };
 
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      nextSlide();
+    }
+    if (isRightSwipe) {
+      prevSlide();
+    }
+  };
+
   return (
-    <section className={`py-20 ${bgColor}`}>
+    <section className={`py-12 sm:py-16 lg:py-20 ${bgColor}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
             {title.includes("Satisfaction") ? (
               <>
                 Our Clients'{" "}
@@ -93,43 +125,79 @@ const ClientSatisfaction = ({
               </>
             )}
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">{subtitle}</p>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+            {subtitle}
+          </p>
         </div>
 
         <div className="relative">
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white border border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors shadow-sm"
+            className="hidden sm:flex absolute left-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 bg-white border border-gray-200 rounded-full items-center justify-center hover:bg-gray-50 transition-all duration-200 shadow-sm"
           >
-            <FaChevronLeft className="w-5 h-5 text-emerald-600" />
+            <FaChevronLeft className="w-4 h-4 lg:w-5 lg:h-5 text-emerald-600" />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 bg-white border border-gray-200 rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors shadow-sm"
+            className="hidden sm:flex absolute right-0 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 lg:w-12 lg:h-12 bg-white border border-gray-200 rounded-full items-center justify-center hover:bg-gray-50 transition-all duration-200 shadow-sm"
           >
-            <FaChevronRight className="w-5 h-5 text-emerald-600" />
+            <FaChevronRight className="w-4 h-4 lg:w-5 lg:h-5 text-emerald-600" />
           </button>
 
-          <div className="overflow-hidden mx-16">
+          <div className="overflow-hidden mx-0 sm:mx-12 lg:mx-16">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
             >
               {testimonials.map((testimonial, index) => (
                 <div
                   key={index}
                   className="w-full flex-shrink-0 flex justify-center"
                 >
-                  <div className="grid md:grid-cols-2 gap-8 max-w-6xl">
+                  <div className="flex flex-col lg:flex-row lg:grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-6xl w-full">
                     <TestimonialCard {...testimonial} />
                     {testimonials[index + 1] && (
-                      <TestimonialCard {...testimonials[index + 1]} />
+                      <div className="hidden lg:block">
+                        <TestimonialCard {...testimonials[index + 1]} />
+                      </div>
                     )}
                   </div>
                 </div>
               ))}
             </div>
+          </div>
+
+          <div className="flex justify-center mt-6 space-x-2 sm:hidden">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                  currentSlide === index
+                    ? "bg-emerald-600"
+                    : "bg-gray-300 hover:bg-gray-400"
+                }`}
+              />
+            ))}
+          </div>
+
+          <div className="flex justify-center space-x-4 mt-6 sm:hidden">
+            <button
+              onClick={prevSlide}
+              className="flex items-center justify-center w-10 h-10 bg-white border border-gray-200 rounded-full transition-all duration-200 shadow-sm hover:bg-gray-50"
+            >
+              <FaChevronLeft className="w-4 h-4 text-emerald-600" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="flex items-center justify-center w-10 h-10 bg-white border border-gray-200 rounded-full transition-all duration-200 shadow-sm hover:bg-gray-50"
+            >
+              <FaChevronRight className="w-4 h-4 text-emerald-600" />
+            </button>
           </div>
         </div>
       </div>

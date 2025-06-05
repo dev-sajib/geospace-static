@@ -63,12 +63,12 @@ const Header = () => {
             >
               Blog
             </a>
-            <a
-              href="#"
+            <Link
+              to="/about"
               className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
             >
               About Us
-            </a>
+            </Link>
           </nav>
 
           <div className="hidden lg:flex items-center space-x-4">
@@ -160,12 +160,13 @@ const Header = () => {
             >
               Blog
             </a>
-            <a
-              href="#"
+            <Link
+              to="/about"
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               About Us
-            </a>
+            </Link>
 
             <div className="pt-4 space-y-3 border-t border-gray-200">
               <a

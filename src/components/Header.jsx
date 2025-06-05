@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <header className="bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-emerald-600">GeoEspace</h1>
+            <Link to="/" className="text-2xl font-bold text-emerald-600">
+              GeoEspace
+            </Link>
           </div>
 
           <nav className="hidden lg:flex space-x-8">
@@ -39,12 +43,12 @@ const Header = () => {
             >
               Consulting & Service
             </a>
-            <a
-              href="#"
+            <Link
+              to="/clients"
               className="text-gray-700 hover:text-emerald-600 font-medium"
             >
               Clients
-            </a>
+            </Link>
             <a
               href="#"
               className="text-gray-700 hover:text-emerald-600 font-medium"

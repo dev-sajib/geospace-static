@@ -7,6 +7,7 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -216,12 +217,12 @@ const Footer = () => {
               >
                 Why GeoEspace
               </a>
-              <a
-                href="#"
+              <Link
+                to="/press-releases"
                 className="text-emerald-200 hover:text-white text-sm transition-colors"
               >
                 Press Center
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-emerald-200 hover:text-white text-sm transition-colors"

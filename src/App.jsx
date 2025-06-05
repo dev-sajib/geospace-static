@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import ClientsPage from "./pages/ClientsPage";
 import PressReleasePage from "./pages/PressReleasePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import CNESSTPermitPage from "./pages/CNESSTPermitPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/clients" element={<ClientsPage />} />
           <Route path="/press-releases" element={<PressReleasePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/cnesst-permit" element={<CNESSTPermitPage />} />
         </Routes>
       </Layout>
     </Router>

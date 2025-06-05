@@ -164,12 +164,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/cnesst-permit"
                   className="text-emerald-200 hover:text-white text-sm transition-colors"
                 >
                   CNESST permit: AP-2403995
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

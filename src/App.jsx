@@ -8,6 +8,7 @@ import CNESSTPermitPage from "./pages/CNESSTPermitPage";
 import WhyChooseGeoEspacePage from "./pages/WhyChooseGeoEspacePage";
 import Top5Page from "./pages/Top5Page";
 import AboutPage from "./pages/AboutPage";
+import TaxDeclarationPage from "./pages/TaxDeclarationPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           />
           <Route path="/top-5" element={<Top5Page />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/tax-declaration" element={<TaxDeclarationPage />} />
         </Routes>
       </Layout>
     </Router>

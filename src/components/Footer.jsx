@@ -130,12 +130,12 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/refund-replacement"
                   className="text-emerald-200 hover:text-white text-xs sm:text-sm transition-colors"
                 >
                   Refund/Replacement Policies
-                </a>
+                </Link>
               </li>
               <li>
                 <a

@@ -18,31 +18,33 @@ const TalentCard = ({
   image,
 }) => {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
-      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden mb-3 sm:mb-4 mx-auto">
+    <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-200 h-full flex flex-col">
+      <div className="w-full h-32 sm:h-40 bg-gray-100 rounded-lg mb-4 overflow-hidden flex-shrink-0">
         <img src={image} alt={name} className="w-full h-full object-cover" />
       </div>
 
-      <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 text-center line-clamp-1">
-        {name}
-      </h3>
+      <div className="flex-grow flex flex-col">
+        <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 text-center line-clamp-1">
+          {name}
+        </h3>
 
-      <div className="flex items-center mb-3 justify-center">
-        <div className="w-3 h-3 bg-emerald-500 rounded-full mr-2 flex-shrink-0"></div>
-        <span className="text-xs sm:text-sm text-emerald-600 font-medium text-center line-clamp-1">
-          {verifiedExpert}
-        </span>
-      </div>
+        <div className="flex items-center mb-3 justify-center">
+          <div className="w-3 h-3 bg-emerald-500 rounded-full mr-2 flex-shrink-0"></div>
+          <span className="text-xs sm:text-sm text-emerald-600 font-medium text-center line-clamp-1">
+            {verifiedExpert}
+          </span>
+        </div>
 
-      <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 text-center">
-        {role}
-      </p>
-
-      <div className="text-xs sm:text-sm text-gray-500 text-center">
-        <p className="mb-1 font-medium">PREVIOUSLY AT</p>
-        <p className="font-medium text-gray-700 line-clamp-1">
-          <strong>{previousCompany}</strong> {companyName}
+        <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 text-center flex-grow">
+          {role}
         </p>
+
+        <div className="text-xs sm:text-sm text-gray-500 text-center mt-auto">
+          <p className="mb-1 font-medium">PREVIOUSLY AT</p>
+          <p className="font-medium text-gray-700 line-clamp-1">
+            <strong>{previousCompany}</strong> {companyName}
+          </p>
+        </div>
       </div>
     </div>
   );

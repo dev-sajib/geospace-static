@@ -162,12 +162,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/tax-declaration"
                   className="text-emerald-200 hover:text-white text-xs sm:text-sm transition-colors"
                 >
                   Tax Declaration Service
-                </a>
+                </Link>
               </li>
               <li>
                 <Link

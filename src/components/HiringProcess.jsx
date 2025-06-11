@@ -64,18 +64,11 @@ const HiringProcess = () => {
           <div className="flex justify-center mt-8 lg:mt-0">
             <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md">
               <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-white rounded-full flex items-center justify-center overflow-hidden mx-auto shadow-xl">
-                <div className="w-full h-full bg-gray-100 rounded-full flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                      <span className="text-emerald-600 font-bold text-xl sm:text-2xl">
-                        👍
-                      </span>
-                    </div>
-                    <p className="text-gray-500 text-xs sm:text-sm">
-                      Business Team Image
-                    </p>
-                  </div>
-                </div>
+                <img
+                  src="/images/hiring1.jpg"
+                  alt="Business Team"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
 
               <div className="absolute top-6 -left-2 sm:top-8 sm:left-4 lg:top-12 lg:left-8 bg-white rounded-xl p-2 sm:p-3 lg:p-4 shadow-lg border border-gray-100 transform hover:scale-105 transition-transform duration-200">

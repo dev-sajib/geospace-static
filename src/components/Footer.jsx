@@ -146,12 +146,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/replacement-guarantee"
                   className="text-emerald-200 hover:text-white text-xs sm:text-sm transition-colors"
                 >
                   Replacement Guarantee
-                </a>
+                </Link>
               </li>
               <li>
                 <a

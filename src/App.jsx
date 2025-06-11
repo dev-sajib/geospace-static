@@ -10,6 +10,7 @@ import Top5Page from "./pages/Top5Page";
 import AboutPage from "./pages/AboutPage";
 import TaxDeclarationPage from "./pages/TaxDeclarationPage";
 import RefundReplacementPage from "./pages/RefundReplacementPage";
+import ReplacementGuaranteePage from "./pages/ReplacementGuaranteePage";
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
           <Route
             path="/refund-replacement"
             element={<RefundReplacementPage />}
+          />
+          <Route
+            path="/replacement-guarantee"
+            element={<ReplacementGuaranteePage />}
           />
         </Routes>
       </Layout>

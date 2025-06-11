@@ -35,16 +35,16 @@ const OnDemandTeams = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-          <div className="space-y-8 lg:space-y-12">
-            <div className="text-center lg:text-left">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4 mx-auto lg:mx-0">
-                <FaClock className="w-6 h-6 sm:w-8 sm:h-8 text-emerald-600" />
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div>
+              <div className="w-16 h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <FaClock className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
+              <h3 className="text-xl font-semibold text-emerald-600 mb-3">
                 Hire Quickly
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 Hire in under 24 hours—no hassle, no delays. Scale up or down
                 with flexibility, choosing from hourly, part-time, or full-time
                 engagements. It's fast, simple, and built to adapt to your
@@ -52,28 +52,14 @@ const OnDemandTeams = () => {
               </p>
             </div>
 
-            <div className="text-center lg:text-left">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4 mx-auto lg:mx-0">
-                <FaBars className="w-6 h-6 sm:w-8 sm:h-8 text-emerald-600" />
+            <div>
+              <div className="w-16 h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <FaMedal className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
-                Leading the Future of Work
-              </h3>
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                We're preparing you for tomorrow's business challenges.
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-8 lg:space-y-12">
-            <div className="text-center lg:text-left">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4 mx-auto lg:mx-0">
-                <FaMedal className="w-6 h-6 sm:w-8 sm:h-8 text-emerald-600" />
-              </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-emerald-600 mb-2 sm:mb-3">
+              <h3 className="text-xl font-semibold text-emerald-600 mb-3">
                 The Top 5%
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 We handpick only the best. Every applicant to our network
                 undergoes rigorous testing and vetting to ensure they meet the
                 highest standards. Our selective process leads to a 98%
@@ -82,14 +68,26 @@ const OnDemandTeams = () => {
               </p>
             </div>
 
-            <div className="text-center lg:text-left">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4 mx-auto lg:mx-0">
-                <FaAward className="w-6 h-6 sm:w-8 sm:h-8 text-emerald-600" />
+            <div>
+              <div className="w-16 h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <FaBars className="w-8 h-8 text-emerald-600" />
               </div>
-              <h3 className="text-lg sm:text-xl font-semibold text-emerald-600 mb-2 sm:mb-3">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                Leading the Future of Work
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                We're preparing you for tomorrow's business challenges.
+              </p>
+            </div>
+
+            <div>
+              <div className="w-16 h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                <FaAward className="w-8 h-8 text-emerald-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-emerald-600 mb-3">
                 A Level Above
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 Integrity, professionalism, and communication—these aren't just
                 buzzwords; they're a commitment. Every freelancer in our global
                 network embodies the highest standards in everything they do, so
@@ -98,68 +96,37 @@ const OnDemandTeams = () => {
             </div>
           </div>
 
-          <div className="space-y-4 sm:space-y-6 max-w-sm mx-auto lg:max-w-none">
-            <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden mb-3 sm:mb-4 mx-auto lg:mx-0">
-                <img
-                  src="/images/team3.jpg"
-                  alt="Ric Saltzman"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 text-center lg:text-left">
-                Ric Saltzman
-              </h4>
-
-              <div className="flex items-center mb-2 justify-center lg:justify-start">
-                <div className="w-3 h-3 bg-emerald-500 rounded-full mr-2 flex-shrink-0"></div>
-                <span className="text-xs sm:text-sm text-emerald-600 font-medium line-clamp-1">
-                  Verified Expert in Mining
-                </span>
-              </div>
-
-              <p className="text-sm sm:text-base text-gray-600 mb-3 text-center lg:text-left">
-                Coal Miner
+          <div className="relative w-full h-[500px] flex items-center justify-center bg-white">
+            <div className="absolute top-10 left-10 z-10 shadow-xl rounded-xl bg-white p-6 w-80">
+              <img
+                src="/images/team3.jpg"
+                alt="Ric Saltzman"
+                className="w-full h-48 object-cover rounded-md"
+              />
+              <h2 className="font-bold text-lg mt-4">Ric Saltzman</h2>
+              <p className="text-green-500 text-sm">
+                Verified Expert in Mining
               </p>
-
-              <div className="text-xs sm:text-sm text-gray-500 text-center lg:text-left">
-                <p className="mb-1 font-medium">PREVIOUSLY AT</p>
-                <p className="font-medium text-gray-700 line-clamp-1">
-                  <strong>Teck</strong> Teck Resources Limited
-                </p>
-              </div>
+              <p className="text-gray-700 text-sm">Coal Miner</p>
+              <p className="text-gray-400 text-xs mt-2">Previously at</p>
+              <p className="font-semibold">Teck</p>
+              <p className="text-gray-500 text-xs">Teck Resources Limited</p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden flex-shrink-0">
-                  <img
-                    src="/images/team4.jpg"
-                    alt="Ric Saltzman"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                <div className="flex-1 min-w-0">
-                  <h4 className="text-sm font-semibold text-gray-900 mb-1 truncate">
-                    Ric Saltzman
-                  </h4>
-                  <div className="flex items-center mb-1">
-                    <div className="w-2 h-2 bg-emerald-500 rounded-full mr-1 flex-shrink-0"></div>
-                    <span className="text-xs text-emerald-600 line-clamp-1">
-                      Verified Expert in Mining
-                    </span>
-                  </div>
-                  <p className="text-xs text-gray-600 mb-1">Coal Miner</p>
-                  <div className="text-xs text-gray-500">
-                    <p className="font-medium">PREVIOUSLY AT</p>
-                    <p className="line-clamp-1">
-                      <strong>Teck</strong> Teck Resources Limited
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="absolute -top-14 left-78 z-20 shadow-2xl rounded-xl bg-white p-6 w-80">
+              <img
+                src="/images/team4.jpg"
+                alt="Ric Saltzman"
+                className="w-full h-48 object-cover rounded-md"
+              />
+              <h2 className="font-bold text-lg mt-4">Ric Saltzman</h2>
+              <p className="text-green-500 text-sm">
+                Verified Expert in Mining
+              </p>
+              <p className="text-gray-700 text-sm">Coal Miner</p>
+              <p className="text-gray-400 text-xs mt-2">Previously at</p>
+              <p className="font-semibold">Teck</p>
+              <p className="text-gray-500 text-xs">Teck Resources Limited</p>
             </div>
           </div>
         </div>

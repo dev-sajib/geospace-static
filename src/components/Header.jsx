@@ -45,12 +45,12 @@ const Header = () => {
                 </svg>
               </a>
             </div>
-            <a
-              href="#"
+            <Link
+              to="/consulting-services"
               className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
             >
               Consulting & Service
-            </a>
+            </Link>
             <Link
               to="/clients"
               className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
@@ -141,12 +141,13 @@ const Header = () => {
             >
               Hire Talent
             </a>
-            <a
-              href="#"
+            <Link
+              to="/consulting-services"
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Consulting & Service
-            </a>
+            </Link>
             <Link
               to="/clients"
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200"

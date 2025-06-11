@@ -4,6 +4,8 @@ import {
   FaTwitter,
   FaFacebook,
   FaSearch,
+  FaClipboardCheck,
+  FaCheckCircle,
   FaUsers,
   FaRocket,
 } from "react-icons/fa";
@@ -85,21 +87,21 @@ const ConsultingServicesPage = () => {
   const workProcessSteps = [
     {
       step: "01",
-      icon: <FaSearch className="w-8 h-8 text-emerald-600" />,
+      icon: <FaSearch className="w-6 h-6 text-white" />,
       title: "Discover",
       description:
         "Our first phase involves conducting a comprehensive English & French language and communication interview/evaluation. We also assess personality traits, looking for candidates who are passionate and fully engaged in their work.",
     },
     {
       step: "02",
-      icon: <FaUsers className="w-8 h-8 text-emerald-600" />,
+      icon: <FaClipboardCheck className="w-6 h-6 text-white" />,
       title: "Define",
       description:
         "We also test each applicant's technical knowledge and problem-solving ability through various assessments. Every member of the GeoEspace network is an expert in their domain, and we typically only advance candidates with exceptional results in this phase.",
     },
     {
       step: "03",
-      icon: <FaRocket className="w-8 h-8 text-emerald-600" />,
+      icon: <FaCheckCircle className="w-6 h-6 text-white" />,
       title: "Develop",
       description:
         "Each candidate is interviewed by GeoEspace screeners who are experts in their functional domain. Our screeners provide specific live exercises, looking for problem-solving ability, depth of experience, communication ability, and creativity.",
@@ -380,35 +382,34 @@ const ConsultingServicesPage = () => {
             </p>
           </div>
 
-          <div className="space-y-16">
+          <div className="max-w-4xl mx-auto">
             {workProcessSteps.map((step, index) => (
-              <div
-                key={index}
-                className="flex flex-col lg:flex-row items-start lg:items-center space-y-6 lg:space-y-0 lg:space-x-12"
-              >
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
-                    {step.icon}
+              <div key={index} className="relative">
+                <div className="flex items-start space-x-8">
+                  <div className="flex flex-col items-center flex-shrink-0">
+                    <div className="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
+                      {step.icon}
+                    </div>
+                    {index < workProcessSteps.length - 1 && (
+                      <div className="w-px h-24 bg-emerald-200"></div>
+                    )}
                   </div>
-                  {index < workProcessSteps.length - 1 && (
-                    <div className="hidden lg:block w-px h-24 bg-gray-200 ml-8"></div>
-                  )}
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center mb-4">
-                    <span className="text-emerald-600 font-semibold mr-4">
-                      Step
-                    </span>
-                    <span className="text-2xl font-bold text-gray-900">
-                      {step.step}
-                    </span>
+                  <div className="flex-1 pb-16">
+                    <div className="flex items-baseline space-x-4 mb-4">
+                      <span className="text-emerald-600 font-semibold text-sm">
+                        Step
+                      </span>
+                      <span className="text-4xl font-bold text-gray-900">
+                        {step.step}
+                      </span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed text-lg">
+                      {step.description}
+                    </p>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    {step.description}
-                  </p>
                 </div>
               </div>
             ))}

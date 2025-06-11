@@ -15,18 +15,12 @@ const TalentCard = ({
   verifiedExpert,
   previousCompany,
   companyName,
+  image,
 }) => {
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
-      <div className="w-16 h-16 sm:w-20 sm:h-20 bg-emerald-100 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto">
-        <div className="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-200 rounded-full flex items-center justify-center">
-          <span className="text-emerald-600 font-bold text-sm sm:text-lg">
-            {name
-              .split(" ")
-              .map((n) => n[0])
-              .join("")}
-          </span>
-        </div>
+      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden mb-3 sm:mb-4 mx-auto">
+        <img src={image} alt={name} className="w-full h-full object-cover" />
       </div>
 
       <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 text-center line-clamp-1">
@@ -103,6 +97,7 @@ const TalentNetwork = () => {
       verifiedExpert: "Verified Expert in Mining",
       previousCompany: "Teck",
       companyName: "Teck Resources Limited",
+      image: "/images/team3.jpg",
     },
     {
       name: "Maria Rodriguez",
@@ -110,6 +105,7 @@ const TalentNetwork = () => {
       verifiedExpert: "Verified Expert in Environmental",
       previousCompany: "Barrick",
       companyName: "Barrick Gold Corporation",
+      image: "/images/team4.jpg",
     },
     {
       name: "Henery Marcel",
@@ -117,6 +113,7 @@ const TalentNetwork = () => {
       verifiedExpert: "Verified Expert in Mining",
       previousCompany: "Vale",
       companyName: "Vale S.A.",
+      image: "/images/team5.jpg",
     },
   ];
 

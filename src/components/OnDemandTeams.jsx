@@ -100,12 +100,12 @@ const OnDemandTeams = () => {
 
           <div className="space-y-4 sm:space-y-6 max-w-sm mx-auto lg:max-w-none">
             <div className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-emerald-100 rounded-full flex items-center justify-center mb-3 sm:mb-4 mx-auto lg:mx-0">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-emerald-200 rounded-full flex items-center justify-center">
-                  <span className="text-emerald-600 font-bold text-sm sm:text-lg">
-                    RS
-                  </span>
-                </div>
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden mb-3 sm:mb-4 mx-auto lg:mx-0">
+                <img
+                  src="/images/team3.jpg"
+                  alt="Ric Saltzman"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-1 text-center lg:text-left">
@@ -133,10 +133,12 @@ const OnDemandTeams = () => {
 
             <div className="bg-white border border-gray-200 rounded-xl p-3 sm:p-4 shadow-sm hover:shadow-md transition-shadow duration-200">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-emerald-600 font-bold text-xs sm:text-sm">
-                    RS
-                  </span>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden flex-shrink-0">
+                  <img
+                    src="/images/team4.jpg"
+                    alt="Ric Saltzman"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 <div className="flex-1 min-w-0">

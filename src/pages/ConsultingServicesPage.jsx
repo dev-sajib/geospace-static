@@ -1,4 +1,12 @@
 import { useState } from "react";
+import {
+  FaLinkedin,
+  FaTwitter,
+  FaFacebook,
+  FaSearch,
+  FaUsers,
+  FaRocket,
+} from "react-icons/fa";
 
 const ConsultingServicesPage = () => {
   const [activeTab, setActiveTab] = useState("On Demand Hired");
@@ -77,18 +85,21 @@ const ConsultingServicesPage = () => {
   const workProcessSteps = [
     {
       step: "01",
+      icon: <FaSearch className="w-8 h-8 text-emerald-600" />,
       title: "Discover",
       description:
         "Our first phase involves conducting a comprehensive English & French language and communication interview/evaluation. We also assess personality traits, looking for candidates who are passionate and fully engaged in their work.",
     },
     {
       step: "02",
+      icon: <FaUsers className="w-8 h-8 text-emerald-600" />,
       title: "Define",
       description:
         "We also test each applicant's technical knowledge and problem-solving ability through various assessments. Every member of the GeoEspace network is an expert in their domain, and we typically only advance candidates with exceptional results in this phase.",
     },
     {
       step: "03",
+      icon: <FaRocket className="w-8 h-8 text-emerald-600" />,
       title: "Develop",
       description:
         "Each candidate is interviewed by GeoEspace screeners who are experts in their functional domain. Our screeners provide specific live exercises, looking for problem-solving ability, depth of experience, communication ability, and creativity.",
@@ -101,7 +112,7 @@ const ConsultingServicesPage = () => {
     description:
       "How do you create compelling presentations that wow your colleagues and impress your managers?",
     author: "Olivia Rhye",
-    date: "20 Jan 2024",
+    date: "11 Jun 2025",
     image: "/images/consulting2.png",
     avatar: "/images/avatar1.png",
   });
@@ -163,9 +174,9 @@ const ConsultingServicesPage = () => {
               <img
                 src="/images/consulting1.png"
                 alt="Consulting Services"
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg transition-all duration-300"
               />
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute bottom-4 left-4">
                 <button className="bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-white/30 transition-colors">
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                     <svg
@@ -259,11 +270,13 @@ const ConsultingServicesPage = () => {
               quality, reduced reporting time, and smoother compliance – all
               while staying on budget.
             </p>
-            <img
-              src="/images/consulting2.png"
-              alt="TerraCore Solutions Case Study"
-              className="w-full h-auto rounded-lg"
-            />
+            <div className="relative">
+              <img
+                src="/images/consulting2.png"
+                alt="TerraCore Solutions Case Study"
+                className="w-full h-auto rounded-lg grayscale transition-all duration-300"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -314,7 +327,7 @@ const ConsultingServicesPage = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-cover grayscale transition-all duration-300"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">
@@ -327,15 +340,24 @@ const ConsultingServicesPage = () => {
                     {member.description}
                   </p>
                   <div className="flex space-x-3">
-                    <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
-                      <span className="text-gray-500 text-sm">f</span>
-                    </div>
-                    <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
-                      <span className="text-gray-500 text-sm">t</span>
-                    </div>
-                    <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
-                      <span className="text-gray-500 text-sm">in</span>
-                    </div>
+                    <a
+                      href="#"
+                      className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
+                    >
+                      <FaLinkedin className="w-4 h-4" />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
+                    >
+                      <FaTwitter className="w-4 h-4" />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-emerald-50 hover:text-emerald-600 transition-colors"
+                    >
+                      <FaFacebook className="w-4 h-4" />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -366,21 +388,7 @@ const ConsultingServicesPage = () => {
               >
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
-                    <svg
-                      className="w-8 h-8 text-emerald-600"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      {index === 0 && (
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      )}
-                      {index === 1 && (
-                        <path d="M9 5H7a2 2 0 00-2 2v6a2 2 0 002 2h6a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                      )}
-                      {index === 2 && (
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      )}
-                    </svg>
+                    {step.icon}
                   </div>
                   {index < workProcessSteps.length - 1 && (
                     <div className="hidden lg:block w-px h-24 bg-gray-200 ml-8"></div>
@@ -459,7 +467,7 @@ const ConsultingServicesPage = () => {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover grayscale transition-all duration-300"
                 />
                 <div className="p-6">
                   <span className="text-emerald-600 text-sm font-medium">
@@ -509,7 +517,7 @@ const ConsultingServicesPage = () => {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover grayscale transition-all duration-300"
                 />
                 <div className="p-6">
                   <span className="text-emerald-600 text-sm font-medium">
@@ -542,7 +550,7 @@ const ConsultingServicesPage = () => {
                       <p className="text-sm font-medium text-gray-900">
                         {post.author}
                       </p>
-                      <p className="text-sm text-gray-500">{post.date}</p>
+                      <p className="text-sm text-gray-505">{post.date}</p>
                     </div>
                   </div>
                 </div>

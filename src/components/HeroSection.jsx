@@ -2,12 +2,12 @@ const HeroSection = () => {
   return (
     <>
       <section
-        className="py-12 sm:py-16 lg:py-20"
+        className=""
         style={{ backgroundColor: "#e7f3f0" }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div className="text-center lg:text-left">
+          <div className="grid lg:grid-cols-2  items-center">
+            <div className="py-12 sm:py-16 lg:py-20 text-center lg:text-left">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
                 Hire the Top 5% of{" "}
                 <span className="text-emerald-600">Freelance Experts</span> in
@@ -26,31 +26,40 @@ const HeroSection = () => {
               </button>
             </div>
 
-            <div className="flex justify-center mt-8 lg:mt-0">
-              <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md">
-                <div className="w-full h-80 sm:h-96 lg:h-[28rem] overflow-hidden">
+            <div className="flex justify-center mt-8 lg:mt-0" style={{height: '100%',
+                alignItems: 'end',
+                paddingTop: '80px',
+                marginLeft: '-130px'}}>
+              <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md" style={{height: '100%', width: '100%', maxWidth: '100%'}}>
+                <div className="" style={{height: '100%', display: 'flex', alignItems: 'end'}}>
                   <img
-                    src="/images/team3.jpg"
+                    src="/images/team3.png"
                     alt="Professional Miner"
-                    className="w-full h-full object-cover object-top opacity-90"
+                    className=""
                   />
                 </div>
 
-                <div className="absolute top-4 right-4 bg-white rounded-xl shadow-lg p-3 sm:p-4 w-48 sm:w-64 border border-gray-100 transform hover:scale-105 transition-transform duration-200">
-                  <div className="flex items-center mb-3">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                      <svg
-                        className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
+                <div style={{top: '0px',bottom:'auto',
+                    background: 'url("/images/Vector12.svg")',
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'bottom',
+                    backgroundRepeat: 'no-repeat',
+                    paddingRight: '60px'}} className="absolute bottom-6 right-4  p-3 sm:p-4 w-48 sm:w-64  transform scale-150 hover:scale-155 transition-transform duration-200">
+                  <img src="/images/map.png" className="py-1 sm:py-1 lg:py-1"/>
+                    <div className="flex items-center mb-3">
+                    {/*<div className="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">*/}
+                    {/*  <svg*/}
+                    {/*    className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600"*/}
+                    {/*    fill="currentColor"*/}
+                    {/*    viewBox="0 0 20 20"*/}
+                    {/*  >*/}
+                    {/*    <path*/}
+                    {/*      fillRule="evenodd"*/}
+                    {/*      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"*/}
+                    {/*      clipRule="evenodd"*/}
+                    {/*    />*/}
+                    {/*  </svg>*/}
+                    {/*</div>*/}
                     <div className="min-w-0">
                       <h3 className="font-semibold text-gray-900 text-sm sm:text-base truncate">
                         John Carol
@@ -61,10 +70,12 @@ const HeroSection = () => {
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="w-3 h-3 bg-emerald-500 rounded-full mr-2 flex-shrink-0"></div>
-                    <span className="text-emerald-600 text-xs sm:text-sm font-medium line-clamp-1">
-                      Verified Expert in Mining
-                    </span>
+                      <img src="/images/varified-badge.svg" className="py-1 sm:py-1 lg:py-1"/>
+
+                      {/*<div className="w-3 h-3 bg-emerald-500 rounded-full mr-2 flex-shrink-0"></div>*/}
+                    {/*<span className="text-emerald-600 text-xs sm:text-sm font-medium line-clamp-1">*/}
+                    {/*  Verified Expert in Mining*/}
+                    {/*</span>*/}
                   </div>
                 </div>
               </div>

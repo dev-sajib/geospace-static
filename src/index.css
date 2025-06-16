@@ -1,5 +1,44 @@
 @import "tailwindcss";
 
+/* Global Font Styles */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+/* Heading Styles - Poppins Medium */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* Medium */
+}
+
+/* Paragraph Styles - Poppins Regular */
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+/* Button Styles */
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Input Styles */
+input,
+textarea,
+select {
+  font-family: "Poppins", sans-serif;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;

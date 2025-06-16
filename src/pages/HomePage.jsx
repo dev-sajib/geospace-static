@@ -8,22 +8,24 @@ import WhyChoose from "../components/WhyChoose";
 import Partnerships from "../components/Partnerships";
 import Testimonial from "../components/Testimonial";
 import ClientSatisfaction from "../components/ClientSatisfaction";
+import FreelancerCarousel from "../components/FreelancerCarousel.jsx";
 
 const HomePage = () => {
-  return (
-    <>
-      <HeroSection />
-      <FreelancerGrid />
-      <ValueProposition />
-      <OnDemandTeams />
-      <TalentNetwork />
-      <HiringProcess />
-      <WhyChoose />
-      <Partnerships />
-      <Testimonial />
-      <ClientSatisfaction />
-    </>
-  );
+    return (
+        <>
+            <HeroSection/>
+            {/*<FreelancerGrid/>*/}
+            <FreelancerCarousel/>
+            <ValueProposition/>
+            <OnDemandTeams/>
+            <TalentNetwork/>
+            <HiringProcess/>
+            <WhyChoose/>
+            <Partnerships/>
+            <Testimonial/>
+            <ClientSatisfaction/>
+        </>
+    );
 };
 
 export default HomePage;

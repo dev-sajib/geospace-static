@@ -1,17 +1,24 @@
 import { useState } from "react";
 
-const PartnerLogo = ({ name, subtitle, logoPlaceholder }) => {
+const PartnerLogo = ({ name, subtitle, logo }) => {
   return (
-    <div className="flex flex-col items-center text-center min-w-[200px] sm:min-w-[250px] lg:min-w-[300px] px-4 sm:px-6 lg:px-8">
-      <div className="w-24 h-16 sm:w-28 sm:h-18 lg:w-32 lg:h-20 bg-gray-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4 hover:bg-gray-200 transition-colors duration-200">
-        <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-400">
-          {logoPlaceholder}
-        </div>
+    <div className="flex flex-col min-w-[200px] sm:min-w-[250px] lg:min-w-[300px] px-4 sm:px-6 lg:px-8">
+      <div className="w-32 h-24 sm:w-36 sm:h-28 lg:w-40 lg:h-32 bg-white rounded-lg flex items-center justify-center mb-4 sm:mb-5 hover:bg-gray-50 transition-colors duration-200 border border-gray-100">
+        <img
+          src={logo}
+          alt={name}
+          className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+        />
       </div>
 
-      <h3 className="text-sm sm:text-base lg:text-xl font-semibold text-gray-900 line-clamp-2">
-        {name}
-      </h3>
+      <div className="text-left">
+        <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 mb-1 line-clamp-2">
+          {name}
+        </h3>
+        <p className="text-xs sm:text-sm text-gray-500 line-clamp-2">
+          {subtitle}
+        </p>
+      </div>
     </div>
   );
 };
@@ -24,34 +31,34 @@ const Partnerships = () => {
       {
         name: "OGQ & GeoEspace",
         subtitle: "Ordre des géologues du Québec",
-        logoPlaceholder: "OGQ",
+        logo: "/images/brands3.svg",
       },
       {
         name: "AEMQ & GeoEspace",
         subtitle: "Association de l'exploration minière du Québec",
-        logoPlaceholder: "AEMQ",
+        logo: "/images/brands4.svg",
       },
       {
         name: "WallBridge & GeoEspace",
         subtitle: "WallBridge Mining Company",
-        logoPlaceholder: "WM",
+        logo: "/images/brands5.svg",
       },
     ],
     [
       {
-        name: "Mining Corp & GeoEspace",
-        subtitle: "Global Mining Solutions",
-        logoPlaceholder: "MC",
+        name: "Mining Solutions & GeoEspace",
+        subtitle: "Professional Mining Services",
+        logo: "/images/brands3.svg",
       },
       {
         name: "GeoTech & GeoEspace",
         subtitle: "Geological Technology Partners",
-        logoPlaceholder: "GT",
+        logo: "/images/brands4.svg",
       },
       {
         name: "EarthSci & GeoEspace",
         subtitle: "Earth Sciences Institute",
-        logoPlaceholder: "ES",
+        logo: "/images/brands5.svg",
       },
     ],
   ];

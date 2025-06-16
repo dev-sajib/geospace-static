@@ -1,10 +1,40 @@
+import { useRef } from "react";
+import { Navigation, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+
 const HeroSection = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+
+  const trustedBrands = [
+    {
+      name: "CNESST",
+      logo: "/images/CNESST.svg",
+    },
+    {
+      name: "AEMQ",
+      logo: "/images/AEMQ.svg",
+    },
+    {
+      name: "OGQ",
+      logo: "/images/OGQ.svg",
+    },
+    {
+      name: "Wallbridge Mining",
+      logo: "/images/Wallbridge Mining.svg",
+    },
+    {
+      name: "Wallbridge Mining",
+      logo: "/images/Wallbridge Mining.svg",
+    },
+  ];
+
   return (
     <>
-      <section
-        className=""
-        style={{ backgroundColor: "#e7f3f0" }}
-      >
+      <section className="" style={{ backgroundColor: "#e7f3f0" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2  items-center">
             <div className="py-12 sm:py-16 lg:py-20 text-center lg:text-left">
@@ -26,12 +56,23 @@ const HeroSection = () => {
               </button>
             </div>
 
-            <div className="flex justify-center mt-8 lg:mt-0" style={{height: '100%',
-                alignItems: 'end',
-                paddingTop: '80px',
-                marginLeft: '-130px'}}>
-              <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md" style={{height: '100%', width: '100%', maxWidth: '100%'}}>
-                <div className="" style={{height: '100%', display: 'flex', alignItems: 'end'}}>
+            <div
+              className="flex justify-center mt-8 lg:mt-0"
+              style={{
+                height: "100%",
+                alignItems: "end",
+                paddingTop: "80px",
+                marginLeft: "-130px",
+              }}
+            >
+              <div
+                className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md"
+                style={{ height: "100%", width: "100%", maxWidth: "100%" }}
+              >
+                <div
+                  className=""
+                  style={{ height: "100%", display: "flex", alignItems: "end" }}
+                >
                   <img
                     src="/images/team3.png"
                     alt="Professional Miner"
@@ -39,14 +80,20 @@ const HeroSection = () => {
                   />
                 </div>
 
-                <div style={{top: '0px',bottom:'auto',
+                <div
+                  style={{
+                    top: "0px",
+                    bottom: "auto",
                     background: 'url("/images/Vector12.svg")',
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'bottom',
-                    backgroundRepeat: 'no-repeat',
-                    paddingRight: '60px'}} className="absolute bottom-6 right-4  p-3 sm:p-4 w-48 sm:w-64  transform scale-150 hover:scale-155 transition-transform duration-200">
-                  <img src="/images/map.png" className="py-1 sm:py-1 lg:py-1"/>
-                    <div className="flex items-center mb-3">
+                    backgroundSize: "contain",
+                    backgroundPosition: "bottom",
+                    backgroundRepeat: "no-repeat",
+                    paddingRight: "60px",
+                  }}
+                  className="absolute bottom-6 right-4  p-3 sm:p-4 w-48 sm:w-64  transform scale-150 hover:scale-155 transition-transform duration-200"
+                >
+                  <img src="/images/map.png" className="py-1 sm:py-1 lg:py-1" />
+                  <div className="flex items-center mb-3">
                     {/*<div className="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">*/}
                     {/*  <svg*/}
                     {/*    className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600"*/}
@@ -70,9 +117,12 @@ const HeroSection = () => {
                     </div>
                   </div>
                   <div className="flex items-center">
-                      <img src="/images/varified-badge.svg" className="py-1 sm:py-1 lg:py-1"/>
+                    <img
+                      src="/images/varified-badge.svg"
+                      className="py-1 sm:py-1 lg:py-1"
+                    />
 
-                      {/*<div className="w-3 h-3 bg-emerald-500 rounded-full mr-2 flex-shrink-0"></div>*/}
+                    {/*<div className="w-3 h-3 bg-emerald-500 rounded-full mr-2 flex-shrink-0"></div>*/}
                     {/*<span className="text-emerald-600 text-xs sm:text-sm font-medium line-clamp-1">*/}
                     {/*  Verified Expert in Mining*/}
                     {/*</span>*/}
@@ -84,27 +134,61 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section className="py-4" style={{ backgroundColor: "#f4f4f4" }}>
+      <section className="py-8 sm:py-12" style={{ backgroundColor: "#f4f4f4" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gray-600 text-center mb-6 text-sm sm:text-base">
+          <p className="text-gray-600 text-center mb-8 text-sm sm:text-base">
             Trusted By Leading Brands and Start Ups
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8">
-            <div className="text-gray-700 font-semibold text-lg sm:text-xl lg:text-2xl">
-              CNESST
-            </div>
-            <div className="text-gray-700 font-semibold text-lg sm:text-xl lg:text-2xl">
-              UQAM
-            </div>
-            <div className="text-gray-700 font-semibold text-lg sm:text-xl lg:text-2xl">
-              AEMQ
-            </div>
-            <div className="text-gray-700 font-semibold text-lg sm:text-xl lg:text-2xl">
-              Wallbridge Mining
-            </div>
-            <div className="text-gray-700 font-semibold text-lg sm:text-xl lg:text-2xl">
-              OGC
-            </div>
+
+          <div className="relative group">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={40}
+              slidesPerView={1}
+              loop={true}
+              speed={1000}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+                waitForTransition: true,
+              }}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              onBeforeInit={(swiper) => {
+                swiper.params.navigation.prevEl = prevRef.current;
+                swiper.params.navigation.nextEl = nextRef.current;
+              }}
+              breakpoints={{
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 50,
+                },
+              }}
+              className="trusted-brands-swiper"
+            >
+              {trustedBrands.map((brand, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex items-center justify-center h-20 sm:h-24 lg:h-28 px-4">
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </section>

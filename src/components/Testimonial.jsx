@@ -1,59 +1,46 @@
 const Testimonial = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-gray-900 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-emerald-400"></div>
-      </div>
+    <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden min-h-[500px] lg:min-h-[600px]">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/satisfied1.jpg')",
+        }}
+      ></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="text-center lg:text-left">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex items-center justify-start h-full min-h-[400px] lg:min-h-[500px]">
+          <div className="text-left max-w-2xl lg:max-w-3xl">
             <div className="mb-6 sm:mb-8">
               <svg
-                className="w-10 h-10 sm:w-12 sm:h-12 text-emerald-400 mb-4 sm:mb-6 mx-auto lg:mx-0"
+                className="w-10 h-10 sm:w-12 sm:h-12 text-white mb-4 sm:mb-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
-              <blockquote className="text-xl sm:text-2xl lg:text-3xl font-bold text-white leading-relaxed mb-4 sm:mb-6">
-                "We are really satisfied about this platform"
+              <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-relaxed mb-8 sm:mb-10">
+                We are really satisfied about this platform
               </blockquote>
+
+              <div className="mb-4 sm:mb-4">
+                <button className="group relative">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-all duration-300 transform hover:scale-110 shadow-2xl">
+                    <svg
+                      className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-gray-800 ml-0.5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+
               <div className="text-white">
-                <p className="text-base sm:text-lg font-medium">
+                <p className="text-lg sm:text-xl font-medium">
                   The Walt Disney Company
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-center mt-8 lg:mt-0">
-            <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-emerald-600 bg-opacity-20 rounded-full flex items-center justify-center mx-auto">
-                <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 bg-emerald-500 bg-opacity-30 rounded-full flex items-center justify-center">
-                  <div className="w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 bg-emerald-400 bg-opacity-40 rounded-full flex items-center justify-center">
-                    <div className="flex space-x-2 sm:space-x-4">
-                      {[...Array(3)].map((_, i) => (
-                        <div
-                          key={i}
-                          className="w-8 h-8 sm:w-12 sm:h-12 bg-white bg-opacity-80 rounded-full flex items-center justify-center transform transition-transform duration-300 hover:scale-110"
-                        >
-                          <svg
-                            className="w-4 h-4 sm:w-6 sm:h-6 text-emerald-600"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

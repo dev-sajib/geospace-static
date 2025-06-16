@@ -1,19 +1,66 @@
-import { FaPlay } from "react-icons/fa";
+import { useState } from "react";
+import { FaPlay, FaTimes } from "react-icons/fa";
 
-const VideoCard = ({ backgroundImage, title = "Watch Now", videoId }) => {
+const VideoModal = ({ isOpen, onClose, videoUrl }) => {
+  if (!isOpen) return null;
+
   return (
-    <div className="relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group shadow-md hover:shadow-lg transition-shadow duration-300">
-      <div className={`w-full h-full ${backgroundImage} bg-cover bg-center`}>
-        <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300"></div>
+    <div
+      className="fixed inset-0 bg-opacity-50 flex items-center justify-center z-50 p-4"
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full max-w-3xl bg-white rounded-lg overflow-hidden shadow-2xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-2 right-2 z-10 w-8 h-8 bg-gray-800 hover:bg-gray-900 rounded-full flex items-center justify-center transition-colors duration-200"
+        >
+          <FaTimes className="w-4 h-4 text-white" />
+        </button>
 
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-            <FaPlay className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-gray-800 ml-1" />
-          </div>
+        <div className="aspect-video">
+          <iframe
+            width="100%"
+            height="100%"
+            src={`${videoUrl}?autoplay=1`}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
         </div>
+      </div>
+    </div>
+  );
+};
 
-        <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4">
-          <p className="text-white font-medium text-xs sm:text-sm">{title}</p>
+const VideoCard = ({
+  backgroundImage,
+  title = "Watch Now",
+  videoId,
+  onClick,
+}) => {
+  return (
+    <div
+      className="relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group shadow-md hover:shadow-lg transition-all duration-200"
+      onClick={onClick}
+    >
+      <div
+        className="w-full h-full bg-cover bg-center"
+        style={{
+          backgroundImage: `url('${backgroundImage}')`,
+        }}
+      >
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white bg-opacity-95 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-200 mb-2">
+            <FaPlay className="w-4 h-4 sm:w-5 sm:h-5 text-gray-800 ml-0.5" />
+          </div>
+          <p className="text-white font-medium text-sm drop-shadow-lg">
+            {title}
+          </p>
         </div>
       </div>
     </div>
@@ -21,52 +68,61 @@ const VideoCard = ({ backgroundImage, title = "Watch Now", videoId }) => {
 };
 
 const WhyChoose = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentVideoUrl, setCurrentVideoUrl] = useState("");
+
+  const videoUrl =
+    "https://www.youtube.com/embed/FWjAbqBWT3k?si=YYHdpbGeTWNeFWAT";
+
+  const handleVideoClick = () => {
+    setCurrentVideoUrl(videoUrl);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setCurrentVideoUrl("");
+  };
+
   const videos = [
     {
       id: 1,
-      backgroundImage:
-        "bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600",
+      backgroundImage: "/images/choose-ge1.jpg",
       title: "Watch Now",
     },
     {
       id: 2,
-      backgroundImage:
-        "bg-gradient-to-br from-emerald-400 via-emerald-500 to-emerald-600",
+      backgroundImage: "/images/choose-ge1.jpg",
       title: "Watch Now",
     },
     {
       id: 3,
-      backgroundImage:
-        "bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600",
+      backgroundImage: "/images/choose-ge1.jpg",
       title: "Watch Now",
     },
     {
       id: 4,
-      backgroundImage:
-        "bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600",
+      backgroundImage: "/images/choose-ge1.jpg",
       title: "Watch Now",
     },
     {
       id: 5,
-      backgroundImage:
-        "bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600",
+      backgroundImage: "/images/choose-ge2.jpg",
       title: "Watch Now",
     },
     {
       id: 6,
-      backgroundImage:
-        "bg-gradient-to-br from-teal-400 via-teal-500 to-teal-600",
+      backgroundImage: "/images/choose-ge2.jpg",
       title: "Watch Now",
     },
     {
       id: 7,
-      backgroundImage: "bg-gradient-to-br from-red-400 via-red-500 to-red-600",
+      backgroundImage: "/images/choose-ge2.jpg",
       title: "Watch Now",
     },
     {
       id: 8,
-      backgroundImage:
-        "bg-gradient-to-br from-indigo-400 via-indigo-500 to-indigo-600",
+      backgroundImage: "/images/choose-ge2.jpg",
       title: "Watch Now",
     },
   ];
@@ -92,16 +148,23 @@ const WhyChoose = () => {
               backgroundImage={video.backgroundImage}
               title={video.title}
               videoId={video.id}
+              onClick={handleVideoClick}
             />
           ))}
         </div>
 
-        <div className="text-center mt-12 sm:mt-16">
+        {/* <div className="text-center mt-12 sm:mt-16">
           <button className="bg-emerald-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-emerald-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
             View All Success Stories
           </button>
-        </div>
+        </div> */}
       </div>
+
+      <VideoModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        videoUrl={currentVideoUrl}
+      />
     </section>
   );
 };

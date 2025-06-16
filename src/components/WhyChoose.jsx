@@ -3,16 +3,16 @@ import { FaPlay } from "react-icons/fa";
 const VideoCard = ({ backgroundImage, title = "Watch Now", videoId }) => {
   return (
     <div className="relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group shadow-md hover:shadow-lg transition-shadow duration-300">
-      <div className={`w-full h-full ${backgroundImage} bg-cover bg-center`}>
-        <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition-all duration-300"></div>
-
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-            <FaPlay className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-gray-800 ml-1" />
+      <div
+        className="w-full h-full bg-cover bg-center"
+        style={{
+          backgroundImage: `url('${backgroundImage}')`,
+        }}
+      >
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 bg-white bg-opacity-90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 mb-2">
+            <FaPlay className="w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-gray-800 ml-0.5" />
           </div>
-        </div>
-
-        <div className="absolute bottom-3 left-3 sm:bottom-4 sm:left-4">
           <p className="text-white font-medium text-xs sm:text-sm">{title}</p>
         </div>
       </div>
@@ -24,49 +24,42 @@ const WhyChoose = () => {
   const videos = [
     {
       id: 1,
-      backgroundImage:
-        "bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600",
+      backgroundImage: "/images/choose-ge1.jpg",
       title: "Watch Now",
     },
     {
       id: 2,
-      backgroundImage:
-        "bg-gradient-to-br from-emerald-400 via-emerald-500 to-emerald-600",
+      backgroundImage: "/images/choose-ge1.jpg",
       title: "Watch Now",
     },
     {
       id: 3,
-      backgroundImage:
-        "bg-gradient-to-br from-amber-400 via-amber-500 to-amber-600",
+      backgroundImage: "/images/choose-ge1.jpg",
       title: "Watch Now",
     },
     {
       id: 4,
-      backgroundImage:
-        "bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600",
+      backgroundImage: "/images/choose-ge1.jpg",
       title: "Watch Now",
     },
     {
       id: 5,
-      backgroundImage:
-        "bg-gradient-to-br from-orange-400 via-orange-500 to-orange-600",
+      backgroundImage: "/images/choose-ge2.jpg",
       title: "Watch Now",
     },
     {
       id: 6,
-      backgroundImage:
-        "bg-gradient-to-br from-teal-400 via-teal-500 to-teal-600",
+      backgroundImage: "/images/choose-ge2.jpg",
       title: "Watch Now",
     },
     {
       id: 7,
-      backgroundImage: "bg-gradient-to-br from-red-400 via-red-500 to-red-600",
+      backgroundImage: "/images/choose-ge2.jpg",
       title: "Watch Now",
     },
     {
       id: 8,
-      backgroundImage:
-        "bg-gradient-to-br from-indigo-400 via-indigo-500 to-indigo-600",
+      backgroundImage: "/images/choose-ge2.jpg",
       title: "Watch Now",
     },
   ];

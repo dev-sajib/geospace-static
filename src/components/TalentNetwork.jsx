@@ -1,13 +1,4 @@
 import { useState } from "react";
-import {
-  FaBolt,
-  FaLeaf,
-  FaOilCan,
-  FaCog,
-  FaHardHat,
-  FaUserTie,
-  FaLightbulb,
-} from "react-icons/fa";
 
 const TalentCard = ({
   name,
@@ -56,7 +47,11 @@ const DiscoveryCard = () => {
     <div className="bg-emerald-600 text-white rounded-xl p-6 sm:p-8 flex flex-col justify-center h-full min-h-[280px]">
       <div className="text-center">
         <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-          <FaLightbulb className="w-8 h-8 sm:w-10 sm:h-10 text-yellow-400" />
+          <img
+            src="/images/bulb 1.svg"
+            alt="Lightbulb"
+            className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
+          />
         </div>
 
         <h3 className="text-xl sm:text-2xl font-bold mb-2">Discover 50,000+</h3>
@@ -75,21 +70,75 @@ const TalentNetwork = () => {
   const [activeTab, setActiveTab] = useState("Electrician");
 
   const tabs = [
-    { name: "Electrician", icon: <FaBolt className="w-3 h-3 sm:w-4 sm:h-4" /> },
+    {
+      name: "Electrician",
+      icon: (
+        <img
+          src="/images/electrician.svg"
+          alt="Electrician"
+          className="w-3 h-3 sm:w-4 sm:h-4 object-contain"
+        />
+      ),
+    },
     {
       name: "Environment Specialist",
-      icon: <FaLeaf className="w-3 h-3 sm:w-4 sm:h-4" />,
+      icon: (
+        <img
+          src="/images/env-sp.svg"
+          alt="Environment Specialist"
+          className="w-3 h-3 sm:w-4 sm:h-4 object-contain"
+        />
+      ),
     },
     {
       name: "Petroleum Expert",
-      icon: <FaOilCan className="w-3 h-3 sm:w-4 sm:h-4" />,
+      icon: (
+        <img
+          src="/images/petroleum.svg"
+          alt="Petroleum Expert"
+          className="w-3 h-3 sm:w-4 sm:h-4 object-contain"
+        />
+      ),
     },
-    { name: "Technician", icon: <FaCog className="w-3 h-3 sm:w-4 sm:h-4" /> },
-    { name: "Miner", icon: <FaHardHat className="w-3 h-3 sm:w-4 sm:h-4" /> },
-    { name: "Engineer", icon: <FaUserTie className="w-3 h-3 sm:w-4 sm:h-4" /> },
+    {
+      name: "Technician",
+      icon: (
+        <img
+          src="/images/technician.svg"
+          alt="Technician"
+          className="w-3 h-3 sm:w-4 sm:h-4 object-contain"
+        />
+      ),
+    },
+    {
+      name: "Miner",
+      icon: (
+        <img
+          src="/images/miner.svg"
+          alt="Miner"
+          className="w-3 h-3 sm:w-4 sm:h-4 object-contain"
+        />
+      ),
+    },
+    {
+      name: "Engineer",
+      icon: (
+        <img
+          src="/images/engineer.svg"
+          alt="Engineer"
+          className="w-3 h-3 sm:w-4 sm:h-4 object-contain"
+        />
+      ),
+    },
     {
       name: "Geologist",
-      icon: <FaHardHat className="w-3 h-3 sm:w-4 sm:h-4" />,
+      icon: (
+        <img
+          src="/images/geologist.svg"
+          alt="Geologist"
+          className="w-3 h-3 sm:w-4 sm:h-4 object-contain"
+        />
+      ),
     },
   ];
 

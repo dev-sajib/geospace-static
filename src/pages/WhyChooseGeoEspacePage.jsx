@@ -111,7 +111,7 @@ const WhyChooseGeoEspacePage = () => {
       <PageHero
         title="Why Choose GeoEspace"
         description="Connecting You with the Top 5% of Geoscience Freelancers – Trusted, Vetted, and Ready to Deliver."
-        bgColor="bg-emerald-600"
+        bgColor="bg-[#368468]"
       />
 
       <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">

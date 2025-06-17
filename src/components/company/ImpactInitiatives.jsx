@@ -39,7 +39,7 @@ const ImpactInitiatives = () => {
             <p className="text-gray-600 text-base leading-relaxed mb-8 max-w-4xl mx-auto">
               {initiative.description}
             </p>
-            <button className="bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200 inline-flex items-center space-x-2">
+            <button className="bg-[#368468] text-white px-6 py-3 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200 inline-flex items-center space-x-2">
               <span>{initiative.buttonText}</span>
               <span>{initiative.buttonIcon}</span>
             </button>

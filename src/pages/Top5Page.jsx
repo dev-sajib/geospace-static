@@ -218,10 +218,10 @@ const Top5Page = () => {
             project leaders.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12">
-            <button className="bg-emerald-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-emerald-700 transition-colors duration-200 w-full sm:w-auto">
+            <button className="bg-[#368468] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-emerald-700 transition-colors duration-200 w-full sm:w-auto">
               Hire Top Talent
             </button>
-            <button className="border-2 border-emerald-600 text-emerald-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-emerald-600 hover:text-white transition-colors duration-200 w-full sm:w-auto">
+            <button className="border-2 border-emerald-600 text-emerald-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-[#368468] hover:text-white transition-colors duration-200 w-full sm:w-auto">
               Apply as a Freelancer
             </button>
           </div>
@@ -232,7 +232,7 @@ const Top5Page = () => {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-emerald-600 relative overflow-hidden">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#368468] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-emerald-700"></div>
           <div

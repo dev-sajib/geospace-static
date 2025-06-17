@@ -152,7 +152,7 @@ const ConsultingServicesPage = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-emerald-600 py-16 sm:py-20 lg:py-24">
+      <section className="bg-[#368468] py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -197,7 +197,7 @@ const ConsultingServicesPage = () => {
         </div>
       </section>
 
-      <section className="bg-emerald-600 py-8">
+      <section className="bg-[#368468] py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-white/80 text-center mb-8">
             Trusted By Leading Brands and Start Ups
@@ -250,7 +250,7 @@ const ConsultingServicesPage = () => {
               ))}
             </div>
 
-            <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
+            <button className="bg-[#368468] text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors">
               Explore GeoEspace
             </button>
           </div>
@@ -283,7 +283,7 @@ const ConsultingServicesPage = () => {
         </div>
       </section>
 
-      <section className="bg-emerald-600 py-16 sm:py-20 lg:py-24">
+      <section className="bg-[#368468] py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-white/80 font-semibold mb-4">
@@ -387,7 +387,7 @@ const ConsultingServicesPage = () => {
               <div key={index} className="relative">
                 <div className="flex items-start space-x-8">
                   <div className="flex flex-col items-center flex-shrink-0">
-                    <div className="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center mb-4">
+                    <div className="w-20 h-20 bg-[#368468] rounded-full flex items-center justify-center mb-4">
                       {step.icon}
                     </div>
                     {index < workProcessSteps.length - 1 && (
@@ -417,7 +417,7 @@ const ConsultingServicesPage = () => {
         </div>
       </section>
 
-      <section className="bg-emerald-600 py-16">
+      <section className="bg-[#368468] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <h2 className="text-3xl font-bold text-white mb-6 lg:mb-0">
@@ -560,7 +560,7 @@ const ConsultingServicesPage = () => {
           </div>
 
           <div className="text-center">
-            <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors flex items-center mx-auto">
+            <button className="bg-[#368468] text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors flex items-center mx-auto">
               Explore all Blogs
               <svg
                 className="w-5 h-5 ml-2"
@@ -580,7 +580,7 @@ const ConsultingServicesPage = () => {
         </div>
       </section>
 
-      <section className="bg-emerald-600 py-16">
+      <section className="bg-[#368468] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -642,7 +642,7 @@ const ConsultingServicesPage = () => {
             <h2 className="text-3xl font-bold text-gray-900">
               Flexible and Reliable Solutions for Every Project Need
             </h2>
-            <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors flex items-center">
+            <button className="bg-[#368468] text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors flex items-center">
               Get a Free Consultation Now
               <svg
                 className="w-5 h-5 ml-2"

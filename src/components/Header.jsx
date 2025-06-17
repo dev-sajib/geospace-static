@@ -17,7 +17,8 @@ const Header = () => {
               <img
                 src="/images/logo.png"
                 alt="GeoEspace"
-                className="h-8 w-auto"
+                className="object-contain"
+                style={{ width: "240px", height: "40px" }}
               />
             </Link>
           </div>
@@ -81,7 +82,7 @@ const Header = () => {
             >
               Apply as a Freelancer
             </a>
-            <button className="bg-emerald-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200 whitespace-nowrap text-sm">
+            <button className="bg-[#368468] text-white px-4 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200 whitespace-nowrap text-sm">
               Hire Top Talent
             </button>
             <button className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm">
@@ -179,7 +180,7 @@ const Header = () => {
               >
                 Apply as a Freelancer
               </a>
-              <button className="w-full text-left bg-emerald-600 text-white px-3 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200">
+              <button className="w-full text-left bg-[#368468] text-white px-3 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200">
                 Hire Top Talent
               </button>
               <button className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-gray-50 rounded-md transition-colors duration-200">

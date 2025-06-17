@@ -44,7 +44,7 @@ const TalentCard = ({
 
 const DiscoveryCard = () => {
   return (
-    <div className="bg-emerald-600 text-white rounded-xl p-6 sm:p-8 flex flex-col justify-center h-full min-h-[280px]">
+    <div className="bg-[#368468] text-white rounded-xl p-6 sm:p-8 flex flex-col justify-center h-full min-h-[280px]">
       <div className="text-center">
         <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
           <img
@@ -347,7 +347,7 @@ const TalentNetwork = () => {
                 onClick={() => setActiveTab(tab.name)}
                 className={`flex items-center space-x-1 sm:space-x-2 px-3 py-2 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-200 whitespace-nowrap flex-shrink-0 ${
                   activeTab === tab.name
-                    ? "bg-emerald-600 text-white shadow-md"
+                    ? "bg-[#368468] text-white shadow-md"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
               >

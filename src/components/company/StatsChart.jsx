@@ -11,7 +11,7 @@ const StatsChart = () => {
       bars: [
         { year: "2022", value: 50000, color: "bg-emerald-300" },
         { year: "2023", value: 40000, color: "bg-emerald-300" },
-        { year: "2024", value: 60000, color: "bg-emerald-600" },
+        { year: "2024", value: 60000, color: "bg-[#368468]" },
         { year: "2025", value: 50000, color: "bg-emerald-300" },
         { year: "2025", value: 50000, color: "bg-emerald-300" },
       ],
@@ -23,7 +23,7 @@ const StatsChart = () => {
         { year: "2023", value: 40000, color: "bg-emerald-300" },
         { year: "2023", value: 40000, color: "bg-emerald-300" },
         { year: "2025", value: 50000, color: "bg-emerald-300" },
-        { year: "2025", value: 50000, color: "bg-emerald-600" },
+        { year: "2025", value: 50000, color: "bg-[#368468]" },
       ],
     },
     {
@@ -31,7 +31,7 @@ const StatsChart = () => {
       bars: [
         { year: "2022", value: 50000, color: "bg-emerald-300" },
         { year: "2023", value: 40000, color: "bg-emerald-300" },
-        { year: "2024", value: 60000, color: "bg-emerald-600" },
+        { year: "2024", value: 60000, color: "bg-[#368468]" },
         { year: "2025", value: 50000, color: "bg-emerald-300" },
       ],
     },
@@ -42,7 +42,7 @@ const StatsChart = () => {
         { year: "2023", value: 50000, color: "bg-emerald-300" },
         { year: "2023", value: 50000, color: "bg-emerald-300" },
         { year: "2025", value: 50000, color: "bg-emerald-300" },
-        { year: "2024", value: 60000, color: "bg-emerald-600" },
+        { year: "2024", value: 60000, color: "bg-[#368468]" },
       ],
     },
   ];
@@ -86,7 +86,7 @@ const StatsChart = () => {
               key={index}
               className={`px-6 py-4 rounded-full border-2 ${
                 item.active
-                  ? "bg-emerald-600 text-white border-emerald-600"
+                  ? "bg-[#368468] text-white border-emerald-600"
                   : "bg-white text-gray-600 border-gray-200"
               }`}
             >
@@ -138,7 +138,7 @@ const StatsChart = () => {
               <div className="flex justify-center mb-4">
                 <div
                   className={`w-3 h-3 rounded-full ${
-                    milestone.active ? "bg-emerald-600" : "bg-emerald-300"
+                    milestone.active ? "bg-[#368468]" : "bg-emerald-300"
                   }`}
                 ></div>
               </div>

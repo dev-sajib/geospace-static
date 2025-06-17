@@ -37,7 +37,7 @@ const ClientVideoCard = ({ title, imageSrc, companyName, className = "" }) => {
         </div>
 
         <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4">
-          <div className="bg-emerald-600 text-white px-2 sm:px-3 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium flex items-center shadow-lg">
+          <div className="bg-[#368468] text-white px-2 sm:px-3 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium flex items-center shadow-lg">
             <svg
               className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2"
               fill="currentColor"

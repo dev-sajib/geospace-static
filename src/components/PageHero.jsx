@@ -1,6 +1,6 @@
-const PageHero = ({ title, description, bgColor = "bg-emerald-600" }) => {
+const PageHero = ({ title, description }) => {
   return (
-    <section className={`${bgColor} py-12 sm:py-16 lg:py-20`}>
+    <section className={`bg-[#38886b] py-12 sm:py-16 lg:py-20`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 lg:mb-6">
           {title}

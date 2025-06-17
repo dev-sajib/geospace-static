@@ -11,13 +11,17 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-emerald-800 text-white">
+    <footer className="bg-[#12382c] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 sm:mb-6">
-              <span className="text-emerald-300">geo</span>espace
-            </h3>
+            <Link to="/" className="inline-block mb-4 sm:mb-6">
+              <img
+                src="/images/footer-logo.png"
+                alt="GeoEspace"
+                className="h-10 w-auto"
+              />
+            </Link>
           </div>
 
           <div className="col-span-1">

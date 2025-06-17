@@ -13,27 +13,30 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-emerald-600">
-              <span className="text-emerald-600">geo</span>
-              <span className="text-gray-900">espace</span>
+            <Link to="/" className="flex items-center">
+              <img
+                src="/images/logo.png"
+                alt="GeoEspace"
+                className="h-8 w-auto"
+              />
             </Link>
           </div>
 
-          <nav className="hidden lg:flex space-x-8">
+          <nav className="hidden lg:flex items-center space-x-6">
             <Link
               to="/top-5"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
+              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
             >
               Top 5%
             </Link>
             <div className="relative group">
               <a
                 href="#"
-                className="text-gray-700 hover:text-emerald-600 font-medium flex items-center transition-colors duration-200"
+                className="text-gray-700 hover:text-emerald-600 font-medium flex items-center transition-colors duration-200 whitespace-nowrap text-sm"
               >
                 Hire Talent
                 <svg
-                  className="w-4 h-4 ml-1 transition-transform duration-200 group-hover:rotate-180"
+                  className="w-3 h-3 ml-1 transition-transform duration-200 group-hover:rotate-180"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -47,41 +50,41 @@ const Header = () => {
             </div>
             <Link
               to="/consulting-services"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
+              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
             >
               Consulting & Service
             </Link>
             <Link
               to="/clients"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
+              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
             >
               Clients
             </Link>
             <a
               href="#"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
+              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
             >
               Blog
             </a>
             <Link
               to="/about"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
+              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
             >
               About Us
             </Link>
           </nav>
 
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-3">
             <a
               href="#"
-              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
+              className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm"
             >
               Apply as a Freelancer
             </a>
-            <button className="bg-emerald-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200 transform hover:scale-105">
+            <button className="bg-emerald-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors duration-200 whitespace-nowrap text-sm">
               Hire Top Talent
             </button>
-            <button className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200">
+            <button className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200 whitespace-nowrap text-sm">
               Log In
             </button>
           </div>

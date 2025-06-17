@@ -1,12 +1,39 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const freelancerTypes = [
+    "Geologist",
+    "Miner",
+    "Engineer",
+    "Electrician",
+    "Environmental Specialist",
+    "Data Specialist",
+    "Professional Driller",
+    "Petroleum Expert",
+    "Hire a Team",
+  ];
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
@@ -30,14 +57,16 @@ const Header = () => {
             >
               Top 5%
             </Link>
-            <div className="relative group">
-              <a
-                href="#"
+            <div className="relative group" ref={dropdownRef}>
+              <button
                 className="text-gray-700 hover:text-emerald-600 font-medium flex items-center transition-colors duration-200 whitespace-nowrap text-sm"
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
                 Hire Talent
                 <svg
-                  className="w-3 h-3 ml-1 transition-transform duration-200 group-hover:rotate-180"
+                  className={`w-3 h-3 ml-1 transition-transform duration-200 ${
+                    isDropdownOpen ? "rotate-180" : ""
+                  }`}
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -47,7 +76,25 @@ const Header = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </button>
+
+              {isDropdownOpen && (
+                <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                  {freelancerTypes.map((type, index) => (
+                    <a
+                      key={index}
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-emerald-600 transition-colors duration-200"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setIsDropdownOpen(false);
+                      }}
+                    >
+                      {type}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
             <Link
               to="/consulting-services"

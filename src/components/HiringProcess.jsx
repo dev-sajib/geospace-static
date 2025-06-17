@@ -4,7 +4,7 @@ const ProcessCard = ({ icon, title, description }) => {
   return (
     <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
       <div className="flex items-start space-x-3 sm:space-x-4">
-        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
+        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center flex-shrink-0">
           {icon}
         </div>
         <div className="min-w-0">
@@ -23,19 +23,19 @@ const ProcessCard = ({ icon, title, description }) => {
 const HiringProcess = () => {
   const steps = [
     {
-      icon: <FaUsers className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" />,
+      icon: <img src="/images/Vector.svg" alt="Business Team" />,
       title: "Talk to One of Our Industry Experts",
       description:
         "An expert on our team will work with you to understand your goals, technical needs, and team dynamics.",
     },
     {
-      icon: <FaUsers className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" />,
+      icon: <img src="/images/Artboard41.svg" alt="Business Team" />,
       title: "Work with Hand-Selected Talent",
       description:
         "Within days, we'll introduce you to the right talent for your project. Average time to match is under 24 hours.",
     },
     {
-      icon: <FaUsers className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600" />,
+      icon: <img src="/images/Artboard41.svg" alt="Business Team" />,
       title: "The Right Fit, Guaranteed",
       description:
         "Work with your new team member on a trial basis (pay only if satisfied), ensuring you hire the right people for the job.",

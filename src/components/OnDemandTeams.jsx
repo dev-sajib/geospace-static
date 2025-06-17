@@ -38,8 +38,8 @@ const OnDemandTeams = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div>
-              <div className="w-16 h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <FaClock className="w-8 h-8 text-emerald-600" />
+              <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                <img src="/images/Search Status.svg" alt="Business Team" />
               </div>
               <h3 className="text-xl font-semibold text-emerald-600 mb-3">
                 Hire Quickly
@@ -53,8 +53,8 @@ const OnDemandTeams = () => {
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <FaMedal className="w-8 h-8 text-emerald-600" />
+              <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                <img src="/images/Brifecase Tick.svg" alt="Business Team" />
               </div>
               <h3 className="text-xl font-semibold text-emerald-600 mb-3">
                 The Top 5%
@@ -69,8 +69,8 @@ const OnDemandTeams = () => {
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <FaBars className="w-8 h-8 text-emerald-600" />
+              <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                <img src="/images/icon.svg" alt="Business Team" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 Leading the Future of Work
@@ -81,8 +81,8 @@ const OnDemandTeams = () => {
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <FaAward className="w-8 h-8 text-emerald-600" />
+              <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+                <img src="/images/Chart 4.svg" alt="Business Team" />
               </div>
               <h3 className="text-xl font-semibold text-emerald-600 mb-3">
                 A Level Above

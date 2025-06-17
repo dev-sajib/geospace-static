@@ -50,7 +50,11 @@ const ValueProposition = () => {
       description:
         "Experienced geologists with in-depth knowledge of earth sciences, mineral exploration, and geological mapping.",
       icon: (
-        <FaHardHat className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <img
+          src="/images/geologist.svg"
+          alt="Geologist"
+          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+        />
       ),
     },
     {
@@ -58,7 +62,11 @@ const ValueProposition = () => {
       description:
         "Skilled miners proficient in underground and surface mining techniques, safety protocols, and resource extraction.",
       icon: (
-        <FaHardHat className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <img
+          src="/images/miner.svg"
+          alt="Miner"
+          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+        />
       ),
     },
     {
@@ -66,7 +74,11 @@ const ValueProposition = () => {
       description:
         "Expert engineers across various disciplines, specializing in designing, developing, and optimizing industrial projects.",
       icon: (
-        <FaUserTie className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <img
+          src="/images/engineer.svg"
+          alt="Engineer"
+          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+        />
       ),
     },
     {
@@ -74,7 +86,11 @@ const ValueProposition = () => {
       description:
         "A professional focused on analyzing, assessing, and resolving issues related to the environment. They work across various fields to protect ecosystems, promote sustainability, and ensure compliance with environmental regulations.",
       icon: (
-        <FaLeaf className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <img
+          src="/images/env-sp.svg"
+          alt="Environment Specialist"
+          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+        />
       ),
     },
     {
@@ -82,7 +98,11 @@ const ValueProposition = () => {
       description:
         "Data-driven analysts adept at interpreting complex data sets, providing actionable insights.",
       icon: (
-        <FaChartBar className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <img
+          src="/images/data-esp.svg"
+          alt="Data Specialist"
+          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+        />
       ),
     },
     {
@@ -90,7 +110,11 @@ const ValueProposition = () => {
       description:
         "Detail-oriented inspectors ensuring compliance with safety standards, quality control, and regulatory requirements.",
       icon: (
-        <FaBolt className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <img
+          src="/images/electrician.svg"
+          alt="Electrician"
+          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+        />
       ),
     },
     {
@@ -98,7 +122,11 @@ const ValueProposition = () => {
       description:
         "Strategic managers with leadership experience in overseeing operations and ensuring project success across sectors.",
       icon: (
-        <FaTools className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <img
+          src="/images/driller.svg"
+          alt="Professional Driller"
+          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+        />
       ),
     },
     {
@@ -106,7 +134,11 @@ const ValueProposition = () => {
       description:
         "A technician in mining and geology plays a critical role in the exploration, extraction, and analysis of mineral resources. Their work supports geologists, mining engineers, and other professionals in gathering data.",
       icon: (
-        <FaCog className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <img
+          src="/images/technician.svg"
+          alt="Technician"
+          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+        />
       ),
     },
     {
@@ -114,7 +146,11 @@ const ValueProposition = () => {
       description:
         "Experienced operators proficient in controlling and monitoring machinery, equipment, and systems to ensure optimal performance and safety.",
       icon: (
-        <FaOilCan className="w-6 h-6 md:w-8 md:h-8 text-emerald-600 group-hover:text-emerald-600" />
+        <img
+          src="/images/petroleum.svg"
+          alt="Petroleum Expert"
+          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+        />
       ),
     },
   ];

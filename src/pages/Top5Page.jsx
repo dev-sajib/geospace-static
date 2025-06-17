@@ -107,7 +107,28 @@ const Top5Page = () => {
     "Soil Scientists",
   ];
 
-  const companies = ["CNESST", "OGQ", "AEMQ", "Wallbridge Mining", "OGQ"];
+  const companies = [
+    {
+      name: "CNESST",
+      logo: "/images/CNESST.svg",
+    },
+    {
+      name: "OGQ",
+      logo: "/images/OGQ.svg",
+    },
+    {
+      name: "AEMQ",
+      logo: "/images/AEMQ.svg",
+    },
+    {
+      name: "Wallbridge Mining",
+      logo: "/images/Wallbridge Mining.svg",
+    },
+    {
+      name: "OGQ",
+      logo: "/images/OGQ.svg",
+    },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -144,9 +165,13 @@ const Top5Page = () => {
             {companies.map((company, index) => (
               <div
                 key={index}
-                className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800"
+                className="flex items-center justify-center h-16 sm:h-20 lg:h-24"
               >
-                {company}
+                <img
+                  src={company.logo}
+                  alt={company.name}
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                />
               </div>
             ))}
           </div>

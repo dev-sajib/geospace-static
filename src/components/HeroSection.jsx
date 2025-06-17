@@ -134,7 +134,7 @@ const HeroSection = () => {
 
       <section className="py-8 sm:py-12" style={{ backgroundColor: "#f4f4f4" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gray-600 text-center mb-8 text-sm sm:text-base">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 sm:mb-12 text-center">
             Trusted By Leading Brands and Start Ups
           </p>
 

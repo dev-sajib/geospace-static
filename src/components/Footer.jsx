@@ -19,9 +19,18 @@ const Footer = () => {
               <img
                 src="/images/footer-logo.png"
                 alt="GeoEspace"
-                className="h-10 w-auto"
+                className="object-contain"
+                style={{ width: "267px", height: "50px" }}
               />
             </Link>
+            <div className="mt-4">
+              <img
+                src="/images/footer-qr.png"
+                alt="QR Code"
+                className="object-contain rounded-xl"
+                style={{ width: "178px", height: "178px" }}
+              />
+            </div>
           </div>
 
           <div className="col-span-1">
@@ -256,25 +265,25 @@ const Footer = () => {
             <div className="flex space-x-3 sm:space-x-4">
               <a
                 href="#"
-                className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-700 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors"
+                className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-700 rounded-full flex items-center justify-center hover:bg-[#368468] transition-colors"
               >
                 <FaLinkedin className="w-3 h-3 sm:w-4 sm:h-4" />
               </a>
               <a
                 href="#"
-                className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-700 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors"
+                className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-700 rounded-full flex items-center justify-center hover:bg-[#368468] transition-colors"
               >
                 <FaTwitter className="w-3 h-3 sm:w-4 sm:h-4" />
               </a>
               <a
                 href="#"
-                className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-700 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors"
+                className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-700 rounded-full flex items-center justify-center hover:bg-[#368468] transition-colors"
               >
                 <FaFacebook className="w-3 h-3 sm:w-4 sm:h-4" />
               </a>
               <a
                 href="#"
-                className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-700 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors"
+                className="w-7 h-7 sm:w-8 sm:h-8 bg-emerald-700 rounded-full flex items-center justify-center hover:bg-[#368468] transition-colors"
               >
                 <FaInstagram className="w-3 h-3 sm:w-4 sm:h-4" />
               </a>

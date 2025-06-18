@@ -10,35 +10,35 @@ const Top5Page = () => {
   const screeningSteps = [
     {
       step: "01",
-      icon: <FaGlobe className="w-full h-full" />,
+      icon: <img src="/images/top5-stp1.svg" className="w-full h-full" />,
       title: "Language and Personality",
       description:
         "The first step of the screening process is a comprehensive English & French language and communication interview evaluation. We also assess personality traits, looking for candidates who are passionate and fully engaged in their work.",
     },
     {
       step: "02",
-      icon: <FaClipboardCheck className="w-full h-full" />,
+      icon: <img src="/images/top5-stp2.svg" className="w-full h-full" />,
       title: "In-Depth Skill Review",
       description:
         "We also test each applicant's technical knowledge and problem-solving ability through various assessments. Every member of the GeoEspace network is an expert in their domain, and we typically only advance candidates with exceptional results in this phase.",
     },
     {
       step: "03",
-      icon: <FaVideo className="w-full h-full" />,
+      icon: <img src="/images/top5-stp3.svg" className="w-full h-full" />,
       title: "Live Screening",
       description:
         "Each candidate is interviewed by GeoEspace screeners who are experts in their functional domain. Our screeners provide specific live exercises, looking for problem-solving ability, depth of experience, communication ability, and creativity.",
     },
     {
       step: "04",
-      icon: <FaProjectDiagram className="w-full h-full" />,
+      icon: <img src="/images/top5-stp4.svg" className="w-full h-full" />,
       title: "Test Projects",
       description:
         "Each candidate is assigned a test project to evaluate whether they can 'walk the walk.' Test projects take 1-3 weeks are comprehensive and provide real-world scenarios for candidates to demonstrate their competence, thoroughness, professionalism, and integrity.",
     },
     {
       step: "05",
-      icon: <FaStar className="w-full h-full" />,
+      icon: <img src="/images/top5-stp5.svg" className="w-full h-full" />,
       title: "Continued Excellence",
       description:
         "Members of the GeoEspace network maintain a track record of excellence while working with clients. As a quality-first company, our focus is on the top for talent and the top for clients, and this principle permeates through to every engagement and every delivered project.",
@@ -107,7 +107,28 @@ const Top5Page = () => {
     "Soil Scientists",
   ];
 
-  const companies = ["CNESST", "OGQ", "AEMQ", "Wallbridge Mining", "OGQ"];
+  const companies = [
+    {
+      name: "CNESST",
+      logo: "/images/CNESST.svg",
+    },
+    {
+      name: "OGQ",
+      logo: "/images/OGQ.svg",
+    },
+    {
+      name: "AEMQ",
+      logo: "/images/AEMQ.svg",
+    },
+    {
+      name: "Wallbridge Mining",
+      logo: "/images/Wallbridge Mining.svg",
+    },
+    {
+      name: "OGQ",
+      logo: "/images/OGQ.svg",
+    },
+  ];
 
   return (
     <div className="min-h-screen">
@@ -144,9 +165,13 @@ const Top5Page = () => {
             {companies.map((company, index) => (
               <div
                 key={index}
-                className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800"
+                className="flex items-center justify-center h-16 sm:h-20 lg:h-24"
               >
-                {company}
+                <img
+                  src={company.logo}
+                  alt={company.name}
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                />
               </div>
             ))}
           </div>
@@ -168,33 +193,38 @@ const Top5Page = () => {
             </p>
           </div>
 
-          <div className="space-y-8 sm:space-y-12 lg:space-y-16">
+          <div className="max-w-4xl mx-auto">
             {screeningSteps.map((step, index) => (
-              <div
-                key={index}
-                className="flex flex-col lg:flex-row items-start gap-6 sm:gap-8 lg:gap-12"
-              >
-                <div className="flex-shrink-0 flex items-center gap-4 sm:gap-6">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-emerald-50 rounded-full flex items-center justify-center">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 text-emerald-600">
-                      {step.icon}
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center">
-                    <div className="text-xs sm:text-sm text-gray-500 mb-1">
-                      Step
-                    </div>
-                    <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-300">
-                      {step.step}
-                    </div>
+              <div key={index} className="flex items-start gap-8 relative">
+                {index < screeningSteps.length - 1 && (
+                  <div className="absolute left-[52.8px] top-[105.66px] w-0.5 h-20 bg-emerald-300"></div>
+                )}
+
+                <div
+                  className="rounded-full flex items-center justify-center flex-shrink-0 w-full h-full"
+                  style={{
+                    width: "105.65px",
+                    height: "105.66px",
+                    borderRadius: "264.13px",
+                    padding: "15px",
+                  }}
+                >
+                  {step.icon}
+                </div>
+
+                <div className="flex flex-col items-start pt-4">
+                  <div className="text-xs text-[##525252] mb-1">Step</div>
+                  <div className="text-4xl font-medium text-[##525252] mb-4">
+                    {step.step}
                   </div>
                 </div>
 
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+                {/* Content */}
+                <div className="flex-1 pt-4 pb-20">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -218,10 +248,10 @@ const Top5Page = () => {
             project leaders.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12">
-            <button className="bg-emerald-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-emerald-700 transition-colors duration-200 w-full sm:w-auto">
+            <button className="bg-[#368468] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-emerald-700 transition-colors duration-200 w-full sm:w-auto">
               Hire Top Talent
             </button>
-            <button className="border-2 border-emerald-600 text-emerald-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-emerald-600 hover:text-white transition-colors duration-200 w-full sm:w-auto">
+            <button className="border-2 border-emerald-600 text-emerald-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-base hover:bg-[#368468] hover:text-white transition-colors duration-200 w-full sm:w-auto">
               Apply as a Freelancer
             </button>
           </div>
@@ -232,7 +262,7 @@ const Top5Page = () => {
         </div>
       </section>
 
-      <section className="py-16 sm:py-20 lg:py-24 bg-emerald-600 relative overflow-hidden">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#368468] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-emerald-700"></div>
           <div

@@ -6,7 +6,7 @@ const ProcessStep = ({ number, title, description, icon }) => {
       <div className="w-16 h-16 sm:w-20 sm:h-20 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
         {icon}
       </div>
-      <div className="w-8 h-8 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 text-sm font-bold">
+      <div className="w-8 h-8 bg-[#368468] text-white rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 text-sm font-bold">
         {number}
       </div>
       <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">

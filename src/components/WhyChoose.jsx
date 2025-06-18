@@ -154,7 +154,7 @@ const WhyChoose = () => {
         </div>
 
         {/* <div className="text-center mt-12 sm:mt-16">
-          <button className="bg-emerald-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-emerald-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
+          <button className="bg-[#368468] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-emerald-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
             View All Success Stories
           </button>
         </div> */}

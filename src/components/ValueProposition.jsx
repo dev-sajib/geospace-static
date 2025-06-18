@@ -12,7 +12,7 @@ import {
 
 const ProfessionalCard = ({ icon, title, description }) => {
   return (
-    <div className="p-6 md:p-8 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-100 hover:bg-emerald-600 hover:text-white min-h-[280px] flex flex-col">
+    <div className="p-6 md:p-8 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-100 hover:bg-[#368468] hover:text-white min-h-[280px] flex flex-col">
       <div className="mb-4 md:mb-6">
         <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center bg-emerald-100 group-hover:bg-white group-hover:bg-opacity-20">
           {icon}

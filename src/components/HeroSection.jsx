@@ -39,9 +39,7 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-2  items-center">
             <div className="py-12 sm:py-16 lg:py-20 text-center lg:text-left">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
-                Hire the Top 5% of{" "}
-                <span className="text-emerald-600">Freelance Experts</span> in
-                the field
+                Hire the Top 5% of Freelance Experts in the field
               </h1>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 GeoEspace is the exclusive No. 1 workspace for the top freelance
@@ -51,7 +49,7 @@ const HeroSection = () => {
                 professionals, ensuring that companies have access to the best
                 talent for their exploration, mining, and environmental needs.
               </p>
-              <button className="bg-emerald-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-emerald-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <button className="bg-[#368468] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-emerald-700 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl">
                 Hire Freelancer
               </button>
             </div>
@@ -136,7 +134,7 @@ const HeroSection = () => {
 
       <section className="py-8 sm:py-12" style={{ backgroundColor: "#f4f4f4" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gray-600 text-center mb-8 text-sm sm:text-base">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 sm:mb-12 text-center">
             Trusted By Leading Brands and Start Ups
           </p>
 

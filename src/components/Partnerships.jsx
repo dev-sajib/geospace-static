@@ -186,7 +186,7 @@ const Partnerships = () => {
               onClick={() => goToSlide(index)}
               className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors duration-200 ${
                 currentSlide === index
-                  ? "bg-emerald-600"
+                  ? "bg-[#368468]"
                   : "bg-gray-300 hover:bg-gray-400"
               }`}
             />

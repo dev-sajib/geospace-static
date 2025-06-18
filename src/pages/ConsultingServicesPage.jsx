@@ -14,12 +14,30 @@ const ConsultingServicesPage = () => {
   const [activeTab, setActiveTab] = useState("On Demand Hired");
 
   const companyLogos = [
-    "CNESST",
-    "OGQ",
-    "AEMQ",
-    "Wallbridge Mining",
-    "OGQ",
-    "AEMQ",
+    {
+      name: "CNESST",
+      logo: "/images/CNESST.svg",
+    },
+    {
+      name: "OGQ",
+      logo: "/images/OGQ.svg",
+    },
+    {
+      name: "AEMQ",
+      logo: "/images/AEMQ.svg",
+    },
+    {
+      name: "Wallbridge Mining",
+      logo: "/images/Wallbridge Mining.svg",
+    },
+    {
+      name: "OGQ",
+      logo: "/images/OGQ.svg",
+    },
+    {
+      name: "AEMQ",
+      logo: "/images/AEMQ.svg",
+    },
   ];
 
   const servicesTags = [
@@ -87,21 +105,21 @@ const ConsultingServicesPage = () => {
   const workProcessSteps = [
     {
       step: "01",
-      icon: <FaSearch className="w-6 h-6 text-white" />,
+      icon: <img src="/images/search1.svg" className="w-12 h-12" />,
       title: "Discover",
       description:
         "Our first phase involves conducting a comprehensive English & French language and communication interview/evaluation. We also assess personality traits, looking for candidates who are passionate and fully engaged in their work.",
     },
     {
       step: "02",
-      icon: <FaClipboardCheck className="w-6 h-6 text-white" />,
+      icon: <img src="/images/define1.svg" className="w-12 h-12" />,
       title: "Define",
       description:
         "We also test each applicant's technical knowledge and problem-solving ability through various assessments. Every member of the GeoEspace network is an expert in their domain, and we typically only advance candidates with exceptional results in this phase.",
     },
     {
       step: "03",
-      icon: <FaCheckCircle className="w-6 h-6 text-white" />,
+      icon: <img src="/images/develop1.svg" className="w-12 h-12" />,
       title: "Develop",
       description:
         "Each candidate is interviewed by GeoEspace screeners who are experts in their functional domain. Our screeners provide specific live exercises, looking for problem-solving ability, depth of experience, communication ability, and creativity.",
@@ -198,14 +216,21 @@ const ConsultingServicesPage = () => {
       </section>
 
       <section className="bg-[#368468] py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-white/80 text-center mb-8">
             Trusted By Leading Brands and Start Ups
           </p>
-          <div className="flex flex-wrap justify-center items-center space-x-8 space-y-4">
+          <div className="flex justify-center items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
             {companyLogos.map((logo, index) => (
-              <div key={index} className="text-white font-semibold text-lg">
-                {logo}
+              <div
+                key={index}
+                className="flex items-center justify-center h-12 sm:h-16 lg:h-20"
+              >
+                <img
+                  src={logo.logo}
+                  alt={logo.name}
+                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                />
               </div>
             ))}
           </div>
@@ -387,7 +412,7 @@ const ConsultingServicesPage = () => {
               <div key={index} className="relative">
                 <div className="flex items-start space-x-8">
                   <div className="flex flex-col items-center flex-shrink-0">
-                    <div className="w-20 h-20 bg-[#368468] rounded-full flex items-center justify-center mb-4">
+                    <div className="w-20 h-20 flex items-center justify-center mb-4">
                       {step.icon}
                     </div>
                     {index < workProcessSteps.length - 1 && (

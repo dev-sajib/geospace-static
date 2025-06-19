@@ -1,13 +1,13 @@
 const ClientLogos = () => {
   const clients = [
-    { name: "Wallbridge", logo: "/api/placeholder/120/60" },
-    { name: "Axis", logo: "/api/placeholder/120/60" },
-    { name: "CNESST", logo: "/api/placeholder/120/60" },
-    { name: "AEIQ", logo: "/api/placeholder/120/60" },
-    { name: "AMQ", logo: "/api/placeholder/120/60" },
-    { name: "CNESST", logo: "/api/placeholder/120/60" },
-    { name: "AEIQ", logo: "/api/placeholder/120/60" },
-    { name: "Wallbridge", logo: "/api/placeholder/120/60" },
+    { name: "Wallbridge Mining", logo: "/images/wallbridge2.png" },
+    { name: "AXIS", logo: "/images/axis.png" },
+    { name: "CNESST", logo: "/images/cnesst2.png" },
+    { name: "AEMQ", logo: "/images/aemq1.png" },
+    { name: "AXIS", logo: "/images/axis.png" },
+    { name: "CNESST", logo: "/images/cnesst2.png" },
+    { name: "AEMQ", logo: "/images/aemq1.png" },
+    { name: "Wallbridge Mining", logo: "/images/wallbridge2.png" },
   ];
 
   return (
@@ -22,19 +22,55 @@ const ClientLogos = () => {
           results.
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 sm:gap-6 lg:gap-8 items-center opacity-60">
-          {clients.map((client, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-center p-2 sm:p-3 lg:p-4"
-            >
-              <img
-                src={client.logo}
-                alt={client.name}
-                className="max-h-8 sm:max-h-10 lg:max-h-12 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-          ))}
+        <div className="space-y-8">
+          <div className="flex items-center justify-center max-w-6xl mx-auto gap-4">
+            {clients.slice(0, 5).map((client, index) => (
+              <div key={index} className="flex items-center">
+                <div
+                  className="flex items-center justify-center border border-gray-200 rounded-2xl"
+                  style={{
+                    width: "240px",
+                    height: "120px",
+                    paddingTop: "9px",
+                    paddingRight: "24px",
+                    paddingBottom: "9px",
+                    paddingLeft: "24px",
+                    gap: "10px",
+                  }}
+                >
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="max-w-full max-h-full w-auto h-auto object-contain hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-3 gap-4 items-center max-w-3xl mx-auto">
+            {clients.slice(5, 8).map((client, index) => (
+              <div
+                key={index + 5}
+                className="flex items-center justify-center border border-gray-200 rounded-2xl"
+                style={{
+                  width: "240px",
+                  height: "120px",
+                  paddingTop: "9px",
+                  paddingRight: "24px",
+                  paddingBottom: "9px",
+                  paddingLeft: "24px",
+                  gap: "10px",
+                }}
+              >
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="max-w-full max-h-full w-auto h-auto object-contain hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

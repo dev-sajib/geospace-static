@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import {LogoCarousel} from "./LogoCarousel.jsx";
 
 const HeroSection = () => {
   const prevRef = useRef(null);
@@ -139,54 +140,7 @@ const HeroSection = () => {
           </p>
 
           <div className="relative group">
-            <Swiper
-              modules={[Navigation, Autoplay]}
-              spaceBetween={40}
-              slidesPerView={1}
-              loop={true}
-              speed={1000}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-                waitForTransition: true,
-              }}
-              navigation={{
-                prevEl: prevRef.current,
-                nextEl: nextRef.current,
-              }}
-              onBeforeInit={(swiper) => {
-                swiper.params.navigation.prevEl = prevRef.current;
-                swiper.params.navigation.nextEl = nextRef.current;
-              }}
-              breakpoints={{
-                480: {
-                  slidesPerView: 2,
-                  spaceBetween: 30,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 50,
-                },
-              }}
-              className="trusted-brands-swiper"
-            >
-              {trustedBrands.map((brand, index) => (
-                <SwiperSlide key={index}>
-                  <div className="flex items-center justify-center h-20 sm:h-24 lg:h-28 px-4">
-                    <img
-                      src={brand.logo}
-                      alt={brand.name}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <LogoCarousel/>
           </div>
         </div>
       </section>

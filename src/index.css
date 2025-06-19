@@ -68,3 +68,9 @@ select {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+/*.freelancer-carousel .swiper-wrapper{*/
+/*    padding: 40px 20px;*/
+/*}*/
+/*.custom-boxshadow{*/
+/*    box-shadow: 2px 5px 50px rgb(0 0 0 / 0.10);*/
+/*}*/

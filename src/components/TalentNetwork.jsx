@@ -353,7 +353,9 @@ const TalentNetwork = () => {
               >
                 {tab.icon}
                 <span className="hidden sm:inline">{tab.name}</span>
-                <span className="sm:hidden">{tab.name.split(" ")[0]}</span>
+                <span className="sm:hidden">
+                  {tab.name.includes(" ") ? tab.name.split(" ")[0] : tab.name}
+                </span>
               </button>
             ))}
           </div>

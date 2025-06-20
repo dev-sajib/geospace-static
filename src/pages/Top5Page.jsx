@@ -195,38 +195,72 @@ const Top5Page = () => {
 
           <div className="max-w-4xl mx-auto">
             {screeningSteps.map((step, index) => (
-              <div key={index} className="flex items-start gap-8 relative">
+              <div
+                key={index}
+                className="flex flex-col sm:flex-row items-start gap-4 sm:gap-8 relative mb-16 sm:mb-20 last:mb-0"
+              >
                 {index < screeningSteps.length - 1 && (
-                  <div className="absolute left-[52.8px] top-[105.66px] w-0.5 h-20 bg-emerald-300"></div>
+                  <div className="hidden sm:block absolute left-[52.8px] top-[105.66px] w-0.5 h-16 lg:h-20 bg-emerald-300"></div>
                 )}
 
-                <div
-                  className="rounded-full flex items-center justify-center flex-shrink-0 w-full h-full"
-                  style={{
-                    width: "105.65px",
-                    height: "105.66px",
-                    borderRadius: "264.13px",
-                    padding: "15px",
-                  }}
-                >
-                  {step.icon}
-                </div>
-
-                <div className="flex flex-col items-start pt-4">
-                  <div className="text-xs text-[##525252] mb-1">Step</div>
-                  <div className="text-4xl font-medium text-[##525252] mb-4">
-                    {step.step}
+                <div className="sm:hidden w-full">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div
+                      className="rounded-full flex items-center justify-center flex-shrink-0"
+                      style={{
+                        width: "80px",
+                        height: "80px",
+                        borderRadius: "50%",
+                        padding: "15px",
+                      }}
+                    >
+                      {step.icon}
+                    </div>
+                    <div className="flex flex-col">
+                      <div className="text-xs text-[#525252] mb-1">Step</div>
+                      <div className="text-2xl font-medium text-[#525252]">
+                        {step.step}
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {step.description}
+                    </p>
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="flex-1 pt-4 pb-20">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    {step.description}
-                  </p>
+                <div className="hidden sm:flex items-start gap-8 w-full">
+                  <div
+                    className="rounded-full flex items-center justify-center flex-shrink-0"
+                    style={{
+                      width: "105.65px",
+                      height: "105.66px",
+                      borderRadius: "264.13px",
+                      padding: "15px",
+                    }}
+                  >
+                    {step.icon}
+                  </div>
+
+                  <div className="flex flex-col items-start pt-4">
+                    <div className="text-xs text-[#525252] mb-1">Step</div>
+                    <div className="text-3xl lg:text-4xl font-medium text-[#525252] mb-4">
+                      {step.step}
+                    </div>
+                  </div>
+
+                  <div className="flex-1 pt-4">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}

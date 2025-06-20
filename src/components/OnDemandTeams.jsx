@@ -35,16 +35,16 @@ const OnDemandTeams = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
             <div>
               <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-4">
                 <img src="/images/Search Status.svg" alt="Business Team" />
               </div>
-              <h3 className="text-xl font-semibold text-emerald-600 mb-3">
+              <h3 className="text-lg sm:text-xl font-semibold text-emerald-600 mb-3">
                 Hire Quickly
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 Hire in under 24 hours—no hassle, no delays. Scale up or down
                 with flexibility, choosing from hourly, part-time, or full-time
                 engagements. It's fast, simple, and built to adapt to your
@@ -56,10 +56,10 @@ const OnDemandTeams = () => {
               <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-4">
                 <img src="/images/Brifecase Tick.svg" alt="Business Team" />
               </div>
-              <h3 className="text-xl font-semibold text-emerald-600 mb-3">
+              <h3 className="text-lg sm:text-xl font-semibold text-emerald-600 mb-3">
                 The Top 5%
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 We handpick only the best. Every applicant to our network
                 undergoes rigorous testing and vetting to ensure they meet the
                 highest standards. Our selective process leads to a 98%
@@ -72,10 +72,10 @@ const OnDemandTeams = () => {
               <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-4">
                 <img src="/images/icon.svg" alt="Business Team" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">
                 Leading the Future of Work
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 We're preparing you for tomorrow's business challenges.
               </p>
             </div>
@@ -84,10 +84,10 @@ const OnDemandTeams = () => {
               <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-4">
                 <img src="/images/Chart 4.svg" alt="Business Team" />
               </div>
-              <h3 className="text-xl font-semibold text-emerald-600 mb-3">
+              <h3 className="text-lg sm:text-xl font-semibold text-emerald-600 mb-3">
                 A Level Above
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 Integrity, professionalism, and communication—these aren't just
                 buzzwords; they're a commitment. Every freelancer in our global
                 network embodies the highest standards in everything they do, so
@@ -96,37 +96,83 @@ const OnDemandTeams = () => {
             </div>
           </div>
 
-          <div className="relative w-full h-[500px] flex items-center justify-center bg-white">
-            <div className="absolute top-10 left-10 z-10 shadow-xl rounded-xl bg-white p-6 w-80">
-              <img
-                src="/images/team3.jpg"
-                alt="Ric Saltzman"
-                className="w-full h-48 object-cover rounded-md"
-              />
-              <h2 className="font-bold text-lg mt-4">Ric Saltzman</h2>
-              <p className="text-green-500 text-sm">
-                Verified Expert in Mining
-              </p>
-              <p className="text-gray-700 text-sm">Coal Miner</p>
-              <p className="text-gray-400 text-xs mt-2">Previously at</p>
-              <p className="font-semibold">Teck</p>
-              <p className="text-gray-500 text-xs">Teck Resources Limited</p>
+          <div className="relative w-full min-h-[400px] lg:min-h-[500px] flex items-center justify-center bg-white">
+            <div className="lg:hidden w-full space-y-4">
+              <div className="bg-white rounded-xl shadow-xl p-4 sm:p-6 max-w-sm mx-auto">
+                <img
+                  src="/images/team3.jpg"
+                  alt="Ric Saltzman"
+                  className="w-full h-32 sm:h-40 object-cover rounded-md"
+                />
+                <h2 className="font-bold text-base sm:text-lg mt-3">
+                  Ric Saltzman
+                </h2>
+                <p className="text-green-500 text-xs sm:text-sm">
+                  Verified Expert in Mining
+                </p>
+                <p className="text-gray-700 text-xs sm:text-sm">Coal Miner</p>
+                <p className="text-gray-400 text-xs mt-2">Previously at</p>
+                <p className="font-semibold text-sm">Teck</p>
+                <p className="text-gray-500 text-xs">Teck Resources Limited</p>
+              </div>
+
+              <div className="bg-white rounded-xl shadow-xl p-4 sm:p-6 max-w-sm mx-auto">
+                <img
+                  src="/images/team4.jpg"
+                  alt="Maria Rodriguez"
+                  className="w-full h-32 sm:h-40 object-cover rounded-md"
+                />
+                <h2 className="font-bold text-base sm:text-lg mt-3">
+                  Maria Rodriguez
+                </h2>
+                <p className="text-green-500 text-xs sm:text-sm">
+                  Verified Expert in Geology
+                </p>
+                <p className="text-gray-700 text-xs sm:text-sm">
+                  Senior Geologist
+                </p>
+                <p className="text-gray-400 text-xs mt-2">Previously at</p>
+                <p className="font-semibold text-sm">Barrick</p>
+                <p className="text-gray-500 text-xs">
+                  Barrick Gold Corporation
+                </p>
+              </div>
             </div>
 
-            <div className="absolute -top-14 left-78 z-20 shadow-2xl rounded-xl bg-white p-6 w-80">
-              <img
-                src="/images/team4.jpg"
-                alt="Ric Saltzman"
-                className="w-full h-48 object-cover rounded-md"
-              />
-              <h2 className="font-bold text-lg mt-4">Ric Saltzman</h2>
-              <p className="text-green-500 text-sm">
-                Verified Expert in Mining
-              </p>
-              <p className="text-gray-700 text-sm">Coal Miner</p>
-              <p className="text-gray-400 text-xs mt-2">Previously at</p>
-              <p className="font-semibold">Teck</p>
-              <p className="text-gray-500 text-xs">Teck Resources Limited</p>
+            <div className="hidden lg:block relative w-full h-full">
+              <div className="absolute top-8 left-8 xl:left-12 z-10 shadow-xl rounded-xl bg-white p-6 w-72 xl:w-80">
+                <img
+                  src="/images/team3.jpg"
+                  alt="Ric Saltzman"
+                  className="w-full h-44 xl:h-48 object-cover rounded-md"
+                />
+                <h2 className="font-bold text-lg mt-4">Ric Saltzman</h2>
+                <p className="text-green-500 text-sm">
+                  Verified Expert in Mining
+                </p>
+                <p className="text-gray-700 text-sm">Coal Miner</p>
+                <p className="text-gray-400 text-xs mt-2">Previously at</p>
+                <p className="font-semibold">Teck</p>
+                <p className="text-gray-500 text-xs">Teck Resources Limited</p>
+              </div>
+
+              <div className="absolute top-0 right-8 xl:right-12 z-20 shadow-2xl rounded-xl bg-white p-6 w-72 xl:w-80">
+                <img
+                  src="/images/team4.jpg"
+                  alt="Maria Rodriguez"
+                  className="w-full h-44 xl:h-48 object-cover rounded-md"
+                />
+                <h2 className="font-bold text-lg mt-4">Maria Rodriguez</h2>
+                <p className="text-green-500 text-sm">
+                  Verified Expert in Geology
+                </p>
+                <p className="text-gray-700 text-sm">Senior Geologist</p>
+                <p className="text-gray-400 text-xs mt-2">Previously at</p>
+                <p className="font-semibold">Barrick</p>
+                <p className="text-gray-500 text-xs">
+                  Barrick Gold Corporation
+                </p>
+              </div>
             </div>
           </div>
         </div>

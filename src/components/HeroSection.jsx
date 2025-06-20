@@ -37,9 +37,9 @@ const HeroSection = () => {
     <>
       <section className="" style={{ backgroundColor: "#e7f3f0" }}>
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2  items-center">
-            <div className="py-12 sm:py-16 lg:py-20 text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[500px] lg:min-h-[600px]">
+            <div className="py-12 sm:py-16 lg:py-20 text-center lg:text-left order-2 lg:order-1">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
                 Hire the Top 5% of Freelance Experts in the field
               </h1>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
@@ -55,76 +55,40 @@ const HeroSection = () => {
               </button>
             </div>
 
-            <div
-              className="flex justify-center mt-8 lg:mt-0"
-              style={{
-                height: "100%",
-                alignItems: "end",
-                paddingTop: "80px",
-                marginLeft: "-130px",
-              }}
-            >
-              <div
-                className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md"
-                style={{ height: "100%", width: "100%", maxWidth: "100%" }}
-              >
-                <div
-                  className=""
-                  style={{ height: "100%", display: "flex", alignItems: "end" }}
-                >
+            <div className="flex justify-center items-center order-1 lg:order-2 py-8 lg:py-0">
+              <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl">
+                <div className="relative flex justify-center items-end h-64 sm:h-80 lg:h-96">
                   <img
                     src="/images/team3.png"
                     alt="Professional Miner"
-                    className=""
+                    className="h-full w-auto object-contain"
                   />
                 </div>
 
                 <div
+                  className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 bg-white rounded-xl shadow-lg p-3 sm:p-4 w-48 sm:w-56 lg:w-64 transform hover:scale-105 transition-transform duration-200"
                   style={{
-                    top: "0px",
-                    bottom: "auto",
                     background: 'url("/images/Vector12.svg")',
                     backgroundSize: "contain",
-                    backgroundPosition: "bottom",
+                    backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
-                    paddingRight: "60px",
                   }}
-                  className="absolute bottom-6 right-4  p-3 sm:p-4 w-48 sm:w-64  transform scale-150 hover:scale-155 transition-transform duration-200"
                 >
-                  <img src="/images/map.png" className="py-1 sm:py-1 lg:py-1" />
-                  <div className="flex items-center mb-3">
-                    {/*<div className="w-10 h-10 sm:w-12 sm:h-12 bg-emerald-100 rounded-full flex items-center justify-center mr-3 flex-shrink-0">*/}
-                    {/*  <svg*/}
-                    {/*    className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-600"*/}
-                    {/*    fill="currentColor"*/}
-                    {/*    viewBox="0 0 20 20"*/}
-                    {/*  >*/}
-                    {/*    <path*/}
-                    {/*      fillRule="evenodd"*/}
-                    {/*      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"*/}
-                    {/*      clipRule="evenodd"*/}
-                    {/*    />*/}
-                    {/*  </svg>*/}
-                    {/*</div>*/}
-                    <div className="min-w-0">
-                      <h3 className="font-semibold text-gray-900 text-sm sm:text-base truncate">
-                        John Carol
-                      </h3>
-                      <p className="text-gray-500 text-xs sm:text-sm">
-                        Coal Miner
-                      </p>
-                    </div>
+                  <img src="/images/map.png" className="w-full mb-2 sm:mb-3" />
+                  <div className="mb-3">
+                    <h3 className="font-semibold text-gray-900 text-sm sm:text-base">
+                      John Carol
+                    </h3>
+                    <p className="text-gray-500 text-xs sm:text-sm">
+                      Coal Miner
+                    </p>
                   </div>
                   <div className="flex items-center">
                     <img
                       src="/images/varified-badge.svg"
-                      className="py-1 sm:py-1 lg:py-1"
+                      alt="Verified Badge"
+                      className="h-4 sm:h-5 w-auto"
                     />
-
-                    {/*<div className="w-3 h-3 bg-emerald-500 rounded-full mr-2 flex-shrink-0"></div>*/}
-                    {/*<span className="text-emerald-600 text-xs sm:text-sm font-medium line-clamp-1">*/}
-                    {/*  Verified Expert in Mining*/}
-                    {/*</span>*/}
                   </div>
                 </div>
               </div>

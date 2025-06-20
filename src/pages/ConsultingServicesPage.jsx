@@ -396,7 +396,7 @@ const ConsultingServicesPage = () => {
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
               Our Work Process
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
@@ -444,16 +444,84 @@ const ConsultingServicesPage = () => {
 
       <section className="bg-[#368468] py-16">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row justify-between items-center">
-            <h2 className="text-3xl font-bold text-white mb-6 lg:mb-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+                From strategy to execution,
+                <br className="hidden sm:block" />
+                we're ready to deliver excellence.
+              </h2>
+              <button className="bg-white text-emerald-600 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center lg:justify-start mx-auto lg:mx-0 w-full sm:w-auto max-w-sm lg:max-w-none">
+                <span className="text-sm sm:text-base">
+                  Get a Free Consultation Now
+                </span>
+                <svg
+                  className="w-4 h-4 sm:w-5 sm:h-5 ml-2 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+              <div className="bg-emerald-700 p-4 sm:p-6 rounded-lg text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                  25,000+
+                </div>
+                <div className="text-white/80 text-xs sm:text-sm">
+                  CLIENTS SERVED
+                </div>
+              </div>
+              <div className="bg-emerald-700 p-4 sm:p-6 rounded-lg text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                  25,000+
+                </div>
+                <div className="text-white/80 text-xs sm:text-sm">
+                  GLOBAL TALENT
+                </div>
+              </div>
+              <div className="bg-emerald-700 p-4 sm:p-6 rounded-lg text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                  25,000+
+                </div>
+                <div className="text-white/80 text-xs sm:text-sm">
+                  CLIENTS SERVED
+                </div>
+              </div>
+              <div className="bg-emerald-700 p-4 sm:p-6 rounded-lg text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-white mb-2">
+                  25,000+
+                </div>
+                <div className="text-white/80 text-xs sm:text-sm">
+                  GLOBAL TALENT
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#368468] py-16">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white text-center lg:text-left">
               Flexible and Reliable Solutions for
-              <br />
+              <br className="hidden sm:block" />
               Every Project Need
             </h2>
-            <button className="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center">
-              Get a Free Consultation Now
+            <button className="bg-white text-emerald-600 px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center lg:justify-start w-full sm:w-auto max-w-sm lg:max-w-none">
+              <span className="text-sm sm:text-base">
+                Get a Free Consultation Now
+              </span>
               <svg
-                className="w-5 h-5 ml-2"
+                className="w-4 h-4 sm:w-5 sm:h-5 ml-2 flex-shrink-0"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -605,72 +673,18 @@ const ConsultingServicesPage = () => {
         </div>
       </section>
 
-      <section className="bg-[#368468] py-16">
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-white mb-6">
-                From strategy to execution,
-                <br />
-                we're ready to deliver excellence.
-              </h2>
-              <button className="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center">
-                Get a Free Consultation Now
-                <svg
-                  className="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div className="grid grid-cols-2 gap-8">
-              <div className="bg-emerald-700 p-6 rounded-lg text-center">
-                <div className="text-3xl font-bold text-white mb-2">
-                  25,000+
-                </div>
-                <div className="text-white/80">CLIENTS SERVED</div>
-              </div>
-              <div className="bg-emerald-700 p-6 rounded-lg text-center">
-                <div className="text-3xl font-bold text-white mb-2">
-                  25,000+
-                </div>
-                <div className="text-white/80">GLOBAL TALENT</div>
-              </div>
-              <div className="bg-emerald-700 p-6 rounded-lg text-center">
-                <div className="text-3xl font-bold text-white mb-2">
-                  25,000+
-                </div>
-                <div className="text-white/80">CLIENTS SERVED</div>
-              </div>
-              <div className="bg-emerald-700 p-6 rounded-lg text-center">
-                <div className="text-3xl font-bold text-white mb-2">
-                  25,000+
-                </div>
-                <div className="text-white/80">GLOBAL TALENT</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-8 lg:mb-12 space-y-6 lg:space-y-0">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center lg:text-left max-w-2xl">
               Flexible and Reliable Solutions for Every Project Need
             </h2>
-            <button className="bg-[#368468] text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors flex items-center">
-              Get a Free Consultation Now
+            <button className="bg-[#368468] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors flex items-center justify-center lg:justify-start mx-auto lg:mx-0 w-full sm:w-auto max-w-sm lg:max-w-none">
+              <span className="text-sm sm:text-base">
+                Get a Free Consultation Now
+              </span>
               <svg
-                className="w-5 h-5 ml-2"
+                className="w-4 h-4 sm:w-5 sm:h-5 ml-2 flex-shrink-0"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -685,15 +699,15 @@ const ConsultingServicesPage = () => {
             </button>
           </div>
 
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 sm:mb-8 text-center lg:text-left">
             Explore Our Services
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {servicesList.map((service, index) => (
               <div
                 key={index}
-                className="text-gray-700 hover:text-emerald-600 transition-colors cursor-pointer"
+                className="text-gray-700 hover:text-emerald-600 transition-colors cursor-pointer p-3 sm:p-4 rounded-lg hover:bg-gray-50 text-sm sm:text-base"
               >
                 {service}
               </div>

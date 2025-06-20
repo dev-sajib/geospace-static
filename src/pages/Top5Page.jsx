@@ -133,7 +133,7 @@ const Top5Page = () => {
   return (
     <div className="min-h-screen">
       <section className="bg-[#38886b] py-16 sm:py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8">
             Why 5%
           </h1>
@@ -157,7 +157,7 @@ const Top5Page = () => {
       </section>
 
       <section className="py-12 sm:py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 sm:mb-12">
             Trusted By Leading Brands and Start Ups
           </h2>
@@ -179,7 +179,7 @@ const Top5Page = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               The <span className="text-emerald-600">GeoEspace</span> Screening
@@ -195,38 +195,72 @@ const Top5Page = () => {
 
           <div className="max-w-4xl mx-auto">
             {screeningSteps.map((step, index) => (
-              <div key={index} className="flex items-start gap-8 relative">
+              <div
+                key={index}
+                className="flex flex-col sm:flex-row items-start gap-4 sm:gap-8 relative mb-16 sm:mb-20 last:mb-0"
+              >
                 {index < screeningSteps.length - 1 && (
-                  <div className="absolute left-[52.8px] top-[105.66px] w-0.5 h-20 bg-emerald-300"></div>
+                  <div className="hidden sm:block absolute left-[52.8px] top-[105.66px] w-0.5 h-16 lg:h-20 bg-emerald-300"></div>
                 )}
 
-                <div
-                  className="rounded-full flex items-center justify-center flex-shrink-0 w-full h-full"
-                  style={{
-                    width: "105.65px",
-                    height: "105.66px",
-                    borderRadius: "264.13px",
-                    padding: "15px",
-                  }}
-                >
-                  {step.icon}
-                </div>
-
-                <div className="flex flex-col items-start pt-4">
-                  <div className="text-xs text-[##525252] mb-1">Step</div>
-                  <div className="text-4xl font-medium text-[##525252] mb-4">
-                    {step.step}
+                <div className="sm:hidden w-full">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div
+                      className="rounded-full flex items-center justify-center flex-shrink-0"
+                      style={{
+                        width: "80px",
+                        height: "80px",
+                        borderRadius: "50%",
+                        padding: "15px",
+                      }}
+                    >
+                      {step.icon}
+                    </div>
+                    <div className="flex flex-col">
+                      <div className="text-xs text-[#525252] mb-1">Step</div>
+                      <div className="text-2xl font-medium text-[#525252]">
+                        {step.step}
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {step.description}
+                    </p>
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="flex-1 pt-4 pb-20">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    {step.description}
-                  </p>
+                <div className="hidden sm:flex items-start gap-8 w-full">
+                  <div
+                    className="rounded-full flex items-center justify-center flex-shrink-0"
+                    style={{
+                      width: "105.65px",
+                      height: "105.66px",
+                      borderRadius: "264.13px",
+                      padding: "15px",
+                    }}
+                  >
+                    {step.icon}
+                  </div>
+
+                  <div className="flex flex-col items-start pt-4">
+                    <div className="text-xs text-[#525252] mb-1">Step</div>
+                    <div className="text-3xl lg:text-4xl font-medium text-[#525252] mb-4">
+                      {step.step}
+                    </div>
+                  </div>
+
+                  <div className="flex-1 pt-4">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -235,7 +269,7 @@ const Top5Page = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8">
             The Top <span className="text-emerald-600">5%</span>
           </h2>
@@ -274,7 +308,7 @@ const Top5Page = () => {
             }}
           ></div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
             GeoEspace Connects the Top 5% of Freelance
             <br className="hidden sm:block" />
@@ -284,7 +318,7 @@ const Top5Page = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 sm:mb-16 lg:mb-20">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">
               GeoEspace Environment Freelancers

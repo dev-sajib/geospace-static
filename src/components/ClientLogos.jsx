@@ -12,7 +12,7 @@ const ClientLogos = () => {
 
   return (
     <section className="py-12 sm:py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
           Trusted by <span className="text-emerald-600">100+ Clients</span>{" "}
           Worldwide
@@ -23,21 +23,10 @@ const ClientLogos = () => {
         </p>
 
         <div className="space-y-8">
-          <div className="flex items-center justify-center max-w-6xl mx-auto gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6 max-w-6xl mx-auto">
             {clients.slice(0, 5).map((client, index) => (
-              <div key={index} className="flex items-center">
-                <div
-                  className="flex items-center justify-center border border-gray-200 rounded-2xl"
-                  style={{
-                    width: "240px",
-                    height: "120px",
-                    paddingTop: "9px",
-                    paddingRight: "24px",
-                    paddingBottom: "9px",
-                    paddingLeft: "24px",
-                    gap: "10px",
-                  }}
-                >
+              <div key={index} className="flex items-center justify-center">
+                <div className="w-full max-w-[200px] sm:max-w-[240px] h-20 sm:h-24 lg:h-28 flex items-center justify-center border border-gray-200 rounded-2xl p-3 sm:p-4 lg:p-6">
                   <img
                     src={client.logo}
                     alt={client.name}
@@ -48,26 +37,16 @@ const ClientLogos = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-3 gap-4 items-center max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6 max-w-3xl mx-auto">
             {clients.slice(5, 8).map((client, index) => (
-              <div
-                key={index + 5}
-                className="flex items-center justify-center border border-gray-200 rounded-2xl"
-                style={{
-                  width: "240px",
-                  height: "120px",
-                  paddingTop: "9px",
-                  paddingRight: "24px",
-                  paddingBottom: "9px",
-                  paddingLeft: "24px",
-                  gap: "10px",
-                }}
-              >
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="max-w-full max-h-full w-auto h-auto object-contain hover:scale-105 transition-transform duration-300"
-                />
+              <div key={index + 5} className="flex items-center justify-center">
+                <div className="w-full max-w-[200px] sm:max-w-[240px] h-20 sm:h-24 lg:h-28 flex items-center justify-center border border-gray-200 rounded-2xl p-3 sm:p-4 lg:p-6">
+                  <img
+                    src={client.logo}
+                    alt={client.name}
+                    className="max-w-full max-h-full w-auto h-auto object-contain hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
             ))}
           </div>

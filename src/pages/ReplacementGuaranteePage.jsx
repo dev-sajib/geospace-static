@@ -9,7 +9,7 @@ const ReplacementGuaranteePage = () => {
       />
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <p className="text-lg text-gray-700 leading-relaxed">
               At GeoEspace, our mission is to provide companies with immediate

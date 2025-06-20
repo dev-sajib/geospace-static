@@ -114,8 +114,8 @@ const WhyChooseGeoEspacePage = () => {
         bgColor="bg-[#368468]"
       />
 
-      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="block lg:hidden space-y-6 sm:space-y-8">
             <div className="flex justify-center py-4">
               <img

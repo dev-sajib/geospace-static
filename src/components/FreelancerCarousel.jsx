@@ -19,7 +19,7 @@ const FreelancerCard = ({
     <div
       className={`bg-white rounded-xl border ${
         isActive ? "text-emerald-600" : "border-gray-200"
-      } p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col`}
+      } p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col custom-boxshadow`}
     >
       <div className="w-full h-48 bg-white-100 rounded-lg mb-4 overflow-hidden flex-shrink-0">
         <img src={image} alt={name} className="w-full h-full object-contain" />
@@ -101,7 +101,7 @@ const FreelancerCarousel = () => {
   ];
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-white">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white freelancer-carousel">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -134,7 +134,7 @@ const FreelancerCarousel = () => {
           slidesPerView={1} // 👈 default to 1 for mobile
           loop={true}
           speed={600}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          // autoplay={{ delay: 3000, disableOnInteraction: false }}
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,

@@ -9,7 +9,7 @@ const CNESSTPermitPage = () => {
       />
 
       <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <div className="flex justify-center mb-8">
               <div className="w-full max-w-4xl">

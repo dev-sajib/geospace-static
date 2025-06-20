@@ -39,6 +39,11 @@ select {
   font-family: "Poppins", sans-serif;
 }
 
+/* Custom Container Width */
+.max-w-container {
+  max-width: 1508px;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;

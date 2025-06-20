@@ -9,7 +9,7 @@ const TaxDeclarationPage = () => {
       />
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
               About the Service

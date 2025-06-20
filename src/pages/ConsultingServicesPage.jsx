@@ -171,7 +171,7 @@ const ConsultingServicesPage = () => {
   return (
     <div className="min-h-screen">
       <section className="bg-[#368468] py-16 sm:py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
@@ -238,7 +238,7 @@ const ConsultingServicesPage = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-emerald-600 font-semibold mb-4">
               OUR CONSULTING & SERVICES
@@ -309,7 +309,7 @@ const ConsultingServicesPage = () => {
       </section>
 
       <section className="bg-[#368468] py-16 sm:py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-white/80 font-semibold mb-4">
               OUR CONSULTING & SERVICES
@@ -394,7 +394,7 @@ const ConsultingServicesPage = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Our Work Process
@@ -443,7 +443,7 @@ const ConsultingServicesPage = () => {
       </section>
 
       <section className="bg-[#368468] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <h2 className="text-3xl font-bold text-white mb-6 lg:mb-0">
               Flexible and Reliable Solutions for
@@ -471,7 +471,7 @@ const ConsultingServicesPage = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
               <span className="text-emerald-600">Counsaltancy</span> Blog
@@ -606,7 +606,7 @@ const ConsultingServicesPage = () => {
       </section>
 
       <section className="bg-[#368468] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">
@@ -662,7 +662,7 @@ const ConsultingServicesPage = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">
               Flexible and Reliable Solutions for Every Project Need

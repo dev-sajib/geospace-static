@@ -133,7 +133,7 @@ const Top5Page = () => {
   return (
     <div className="min-h-screen">
       <section className="bg-[#38886b] py-16 sm:py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8">
             Why 5%
           </h1>
@@ -157,7 +157,7 @@ const Top5Page = () => {
       </section>
 
       <section className="py-12 sm:py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 sm:mb-12">
             Trusted By Leading Brands and Start Ups
           </h2>
@@ -179,7 +179,7 @@ const Top5Page = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               The <span className="text-emerald-600">GeoEspace</span> Screening
@@ -235,7 +235,7 @@ const Top5Page = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8">
             The Top <span className="text-emerald-600">5%</span>
           </h2>
@@ -274,7 +274,7 @@ const Top5Page = () => {
             }}
           ></div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
             GeoEspace Connects the Top 5% of Freelance
             <br className="hidden sm:block" />
@@ -284,7 +284,7 @@ const Top5Page = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 sm:mb-16 lg:mb-20">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">
               GeoEspace Environment Freelancers

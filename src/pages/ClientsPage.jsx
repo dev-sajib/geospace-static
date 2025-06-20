@@ -80,8 +80,8 @@ const ClientsPage = () => {
         description="GeoEspace connects top-tier digital talent from the mining industry — from fast-growing startups to grocery recognized enterprises. We empower mining professionals and help projects that drive innovation and discovery."
       />
 
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Featured</h2>
             <h3 className="text-2xl font-semibold text-emerald-600">

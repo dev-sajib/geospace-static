@@ -12,7 +12,7 @@ const ClientLogos = () => {
 
   return (
     <section className="py-12 sm:py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
           Trusted by <span className="text-emerald-600">100+ Clients</span>{" "}
           Worldwide

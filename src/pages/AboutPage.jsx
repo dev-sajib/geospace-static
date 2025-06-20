@@ -163,7 +163,7 @@ const AboutPage = () => {
       />
 
       <section className="bg-gray-50 py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center space-x-0 sm:space-x-8 space-y-2 sm:space-y-0">
             {tabs.map((tab) => (
               <button
@@ -183,7 +183,7 @@ const AboutPage = () => {
       </section>
 
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           {renderTabContent()}
         </div>
       </section>

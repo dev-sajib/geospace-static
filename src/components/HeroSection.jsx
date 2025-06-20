@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import {LogoCarousel} from "./LogoCarousel.jsx";
+import { LogoCarousel } from "./LogoCarousel.jsx";
 
 const HeroSection = () => {
   const prevRef = useRef(null);
@@ -36,7 +36,7 @@ const HeroSection = () => {
   return (
     <>
       <section className="" style={{ backgroundColor: "#e7f3f0" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2  items-center">
             <div className="py-12 sm:py-16 lg:py-20 text-center lg:text-left">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
@@ -134,13 +134,13 @@ const HeroSection = () => {
       </section>
 
       <section className="py-8 sm:py-12" style={{ backgroundColor: "#f4f4f4" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-8 sm:mb-12 text-center">
             Trusted By Leading Brands and Start Ups
           </p>
 
           <div className="relative group">
-            <LogoCarousel/>
+            <LogoCarousel />
           </div>
         </div>
       </section>

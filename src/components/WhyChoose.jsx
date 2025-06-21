@@ -133,7 +133,7 @@ const WhyChoose = () => {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
             Why Organizations Choose{" "}
-            <span className="text-emerald-600">GeoEspace</span>
+            <span className="text-[#064939]">GeoEspace</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Discover how our clients are leveraging the power of Geoespace to

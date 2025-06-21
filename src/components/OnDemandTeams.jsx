@@ -96,8 +96,8 @@ const OnDemandTeams = () => {
             </div>
           </div>
 
-          <div className="relative w-full min-h-[400px] lg:min-h-[500px] flex items-center justify-center bg-white">
-            <div className="lg:hidden w-full space-y-4">
+          <div className="relative w-full lg:min-h-[400px] xl:min-h-[500px] flex items-center justify-center bg-white">
+            <div className="hidden w-full space-y-4">
               <div className="bg-white rounded-xl shadow-xl p-4 sm:p-6 max-w-sm mx-auto">
                 <img
                   src="/images/team3.jpg"
@@ -156,7 +156,7 @@ const OnDemandTeams = () => {
                 <p className="text-gray-500 text-xs">Teck Resources Limited</p>
               </div>
 
-              <div className="absolute top-0 right-8 xl:right-12 z-20 shadow-2xl rounded-xl bg-white p-6 w-72 xl:w-80">
+              <div className="absolute -top-32 right-12 xl:right-16 z-20 shadow-2xl rounded-xl bg-white p-6 w-72 xl:w-80">
                 <img
                   src="/images/team4.jpg"
                   alt="Maria Rodriguez"

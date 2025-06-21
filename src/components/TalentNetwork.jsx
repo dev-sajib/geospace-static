@@ -46,21 +46,28 @@ const DiscoveryCard = () => {
   return (
     <div className="bg-[#368468] text-white rounded-xl p-6 sm:p-8 flex flex-col justify-center h-full min-h-[280px]">
       <div className="text-center">
-        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-          <img
-            src="/images/bulb 1.svg"
-            alt="Lightbulb"
-            className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
-          />
-        </div>
+        <img
+          src="/images/bulb 1.svg"
+          alt="Lightbulb"
+          className="w-[200px] h-[200px] object-contain mx-auto mb-6"
+          style={{ borderRadius: "131px" }}
+        />
 
-        <h3 className="text-xl sm:text-2xl font-bold mb-2">Discover 50,000+</h3>
-        <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">
-          More Talent
-        </h4>
-        <p className="text-emerald-100 text-sm sm:text-base">
-          in the Geospace Network
-        </p>
+        <div
+          className="w-[224px] h-[144px] mx-auto"
+          style={{
+            fontFamily: "Poppins",
+            fontWeight: 600,
+            fontSize: "24px",
+            lineHeight: "150%",
+            letterSpacing: "0%",
+            textAlign: "center",
+          }}
+        >
+          <h3 className="font-bold mb-2">Discover 50,000+</h3>
+          <h4 className="font-semibold mb-1">More Talent</h4>
+          <p>in the GeoEspace Network</p>
+        </div>
       </div>
     </div>
   );
@@ -340,7 +347,7 @@ const TalentNetwork = () => {
         </div>
 
         <div className="mb-8 sm:mb-12">
-          <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-2 sm:pb-0 sm:flex-wrap sm:justify-center scrollbar-hide">
+          <div className="w-[1400px] h-[80px] justify-between border-t border-b border-gray-100 pt-4 pb-4 flex gap-2 sm:gap-3 overflow-x-auto scrollbar-hide mx-auto max-w-full">
             {tabs.map((tab) => (
               <button
                 key={tab.name}

@@ -14,8 +14,10 @@ const ProfessionalCard = ({ icon, title, description }) => {
   return (
     <div className="p-6 md:p-8 rounded-xl transition-all duration-300 cursor-pointer group bg-gray-100 hover:bg-[#368468] hover:text-white min-h-[280px] flex flex-col">
       <div className="mb-4 md:mb-6">
-        <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center bg-emerald-100 group-hover:bg-white group-hover:bg-opacity-20">
-          {icon}
+        <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center">
+          <div className="group-hover:brightness-0 group-hover:invert transition-all duration-300">
+            {icon}
+          </div>
         </div>
       </div>
 
@@ -53,7 +55,7 @@ const ValueProposition = () => {
         <img
           src="/images/geologist.svg"
           alt="Geologist"
-          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+          className="w-[50px] h-[50px] object-contain"
         />
       ),
     },
@@ -65,7 +67,7 @@ const ValueProposition = () => {
         <img
           src="/images/miner.svg"
           alt="Miner"
-          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+          className="w-[50px] h-[50px] object-contain"
         />
       ),
     },
@@ -77,7 +79,7 @@ const ValueProposition = () => {
         <img
           src="/images/engineer.svg"
           alt="Engineer"
-          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+          className="w-[50px] h-[50px] object-contain"
         />
       ),
     },
@@ -89,7 +91,7 @@ const ValueProposition = () => {
         <img
           src="/images/env-sp.svg"
           alt="Environment Specialist"
-          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+          className="w-[50px] h-[50px] object-contain"
         />
       ),
     },
@@ -101,7 +103,7 @@ const ValueProposition = () => {
         <img
           src="/images/data-esp.svg"
           alt="Data Specialist"
-          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+          className="w-[50px] h-[50px] object-contain"
         />
       ),
     },
@@ -113,7 +115,7 @@ const ValueProposition = () => {
         <img
           src="/images/electrician.svg"
           alt="Electrician"
-          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+          className="w-[50px] h-[50px] object-contain"
         />
       ),
     },
@@ -125,7 +127,7 @@ const ValueProposition = () => {
         <img
           src="/images/driller.svg"
           alt="Professional Driller"
-          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+          className="w-[50px] h-[50px] object-contain"
         />
       ),
     },
@@ -137,7 +139,7 @@ const ValueProposition = () => {
         <img
           src="/images/technician.svg"
           alt="Technician"
-          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+          className="w-[50px] h-[50px] object-contain"
         />
       ),
     },
@@ -149,7 +151,7 @@ const ValueProposition = () => {
         <img
           src="/images/petroleum.svg"
           alt="Petroleum Expert"
-          className="w-6 h-6 md:w-8 md:h-8 object-contain"
+          className="w-[50px] h-[50px] object-contain"
         />
       ),
     },
@@ -162,8 +164,9 @@ const ValueProposition = () => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 sm:mb-4">
             Leverage World-Class
           </h2>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-emerald-600 mb-4 sm:mb-6">
-            Geological and Mining Talent
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
+            <span className="text-emerald-600">Geological and Mining</span>{" "}
+            <span className="text-gray-900">Talent</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
             We are the largest, globally-distributed network of expert geologist

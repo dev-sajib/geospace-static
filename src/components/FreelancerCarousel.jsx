@@ -22,7 +22,7 @@ const FreelancerCard = ({
       } p-4 md:p-6 shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col custom-boxshadow`}
     >
       <div className="w-full h-48 bg-white-100 rounded-lg mb-4 overflow-hidden flex-shrink-0">
-        <img src={image} alt={name} className="w-full h-full object-contain" />
+        <img src={image} alt={name} className="w-full h-full object-cover" />
       </div>
 
       <div className="flex-grow flex flex-col">

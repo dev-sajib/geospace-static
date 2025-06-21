@@ -2,8 +2,8 @@ import { useState } from "react";
 
 const PartnerLogo = ({ name, subtitle, logo }) => {
   return (
-    <div className="flex flex-col min-w-[200px] sm:min-w-[250px] lg:min-w-[300px] px-4 sm:px-6 lg:px-8">
-      <div className="w-32 h-24 sm:w-36 sm:h-28 lg:w-40 lg:h-32 bg-white rounded-lg flex items-center justify-center mb-4 sm:mb-5 hover:bg-gray-50 transition-colors duration-200 border border-gray-100">
+    <div className="flex flex-col min-w-[120px] sm:min-w-[160px] md:min-w-[200px] lg:min-w-[260px] px-1 sm:px-3 lg:px-5">
+      <div className="w-20 h-16 sm:w-28 sm:h-20 md:w-32 md:h-24 lg:w-36 lg:h-28 bg-white rounded-lg flex items-center justify-center mb-2 sm:mb-3 lg:mb-4 hover:bg-gray-50 transition-colors duration-200 border border-gray-100 mx-auto">
         <img
           src={logo}
           alt={name}
@@ -11,13 +11,11 @@ const PartnerLogo = ({ name, subtitle, logo }) => {
         />
       </div>
 
-      <div className="text-left">
-        <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 mb-1 line-clamp-2">
+      <div className="text-center sm:text-left">
+        <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-900 mb-1 line-clamp-2">
           {name}
         </h3>
-        <p className="text-xs sm:text-sm text-gray-500 line-clamp-2">
-          {subtitle}
-        </p>
+        <p className="text-xs text-gray-500 line-clamp-2">{subtitle}</p>
       </div>
     </div>
   );
@@ -130,7 +128,7 @@ const Partnerships = () => {
             >
               {partnershipSlides.map((slide, slideIndex) => (
                 <div key={slideIndex} className="w-full flex-shrink-0">
-                  <div className="flex justify-center items-center space-x-4 sm:space-x-6 lg:space-x-8 xl:space-x-16 px-4">
+                  <div className="flex justify-center items-center space-x-1 sm:space-x-3 md:space-x-5 lg:space-x-7 xl:space-x-10 px-1 sm:px-3">
                     {slide.map((partner, partnerIndex) => (
                       <PartnerLogo key={partnerIndex} {...partner} />
                     ))}
@@ -179,7 +177,7 @@ const Partnerships = () => {
           </button>
         </div>
 
-        <div className="flex justify-center space-x-2 mt-8 sm:mt-12">
+        <div className="hidden sm:flex justify-center space-x-2 mt-8 sm:mt-12">
           {partnershipSlides.map((_, index) => (
             <button
               key={index}

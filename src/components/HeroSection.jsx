@@ -55,7 +55,7 @@ const HeroSection = () => {
               </button>
             </div>
 
-            <div className="flex justify-center items-center order-1 lg:order-2 py-8 lg:py-0">
+            <div className="hidden lg:flex justify-center items-center order-1 lg:order-2 py-8 lg:py-0">
               <div className="relative w-full max-w-md lg:max-w-lg xl:max-w-xl">
                 <div className="relative flex justify-center items-end h-64 sm:h-80 lg:h-96">
                   <img
@@ -66,7 +66,7 @@ const HeroSection = () => {
                 </div>
 
                 <div
-                  className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-8 lg:right-8 bg-white rounded-xl shadow-lg p-3 sm:p-4 w-48 sm:w-56 lg:w-64 transform hover:scale-105 transition-transform duration-200"
+                  className="absolute bottom-48 right-4 sm:bottom-56 sm:right-6 lg:bottom-64 lg:right-8 bg-white rounded-xl p-3 sm:p-4 w-48 sm:w-56 lg:w-64 transform hover:scale-105 transition-transform duration-200"
                   style={{
                     background: 'url("/images/Vector12.svg")',
                     backgroundSize: "contain",

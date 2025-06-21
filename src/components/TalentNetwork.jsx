@@ -340,7 +340,7 @@ const TalentNetwork = () => {
         </div>
 
         <div className="mb-8 sm:mb-12">
-          <div className="flex gap-2 sm:gap-3 overflow-x-auto pb-2 sm:pb-0 sm:flex-wrap sm:justify-center scrollbar-hide">
+          <div className="w-[1400px] h-[80px] justify-between border-t border-b border-gray-100 pt-4 pb-4 flex gap-2 sm:gap-3 overflow-x-auto scrollbar-hide mx-auto max-w-full">
             {tabs.map((tab) => (
               <button
                 key={tab.name}
